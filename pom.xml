@@ -96,13 +96,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
         </dependency>
-
+<!--
         <dependency>
             <groupId>com.mobike</groupId>
             <artifactId>mobike-redis</artifactId>
             <version>1.6.28</version>
         </dependency>
-
+-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
