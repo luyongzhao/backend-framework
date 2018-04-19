@@ -8,4 +8,5 @@ import java.io.Serializable;
  */
 public interface DtoSupport extends Serializable {
 
+
 }

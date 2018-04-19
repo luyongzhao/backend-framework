@@ -4,6 +4,7 @@ import com.mobike.iotcloud.backend.framework.cache.PersistentCache;
 import com.mobike.iotcloud.backend.framework.util.JavaBeanSerializerUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
+import org.springframework.stereotype.Service;
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
 import redis.clients.jedis.*;
 import redis.clients.util.Pool;
@@ -12,10 +13,11 @@ import redis.clients.util.Slowlog;
 import java.util.*;
 
 /**
- * 一次使用一个命令，从连接池中打开连接，执行操作，返回链接，如果一个业务逻辑中中要执行多个命令， 建议不要使用本类<br />
+ * 一次使用一个命令，从连接池中打开连接，执行操作，返回链接，如果一个业务逻辑中要执行多个命令， 建议不要使用本类<br />
  *
  * @author luyongzhao
  */
+@Service("persistentCache")
 public class RedisPersistentCacheImpl implements PersistentCache {
 
     private Pool<Jedis> pool = null;

@@ -5,6 +5,7 @@ com/mobike/iotcloud/backend/framework/util/JoinHelper.class
 com/mobike/iotcloud/backend/framework/util/MD5.class
 com/mobike/iotcloud/backend/framework/controller/bean/PageLimit.class
 com/mobike/iotcloud/backend/framework/controller/BasicValidateController.class
+com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl.class
 com/mobike/iotcloud/backend/framework/util/QRCodeUtil.class
 com/mobike/iotcloud/backend/framework/validate/Phone$List.class
 com/mobike/iotcloud/backend/framework/exception/FinalExceptionHandler.class
@@ -12,6 +13,7 @@ com/mobike/iotcloud/backend/framework/service/ServiceSupport$1.class
 com/mobike/iotcloud/backend/framework/util/DES.class
 com/mobike/iotcloud/backend/framework/util/URLUtil.class
 com/mobike/iotcloud/backend/framework/util/SnowflakeIdWorker.class
+com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$2.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$2.class
 com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.class
 com/mobike/iotcloud/backend/framework/cache/PersistentCache.class
@@ -19,11 +21,13 @@ com/mobike/iotcloud/backend/framework/cache/MemoryCache.class
 com/mobike/iotcloud/backend/framework/util/ExcelUtil.class
 com/mobike/iotcloud/backend/framework/util/StringEscape.class
 com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.class
+com/mobike/iotcloud/backend/framework/autoconfig/HibernateProperties.class
 com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.class
 com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.class
 com/mobike/iotcloud/backend/framework/util/ClassUtil.class
 com/mobike/iotcloud/backend/framework/util/CookiesUtil.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestPageLimit.class
+com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$3.class
 com/mobike/iotcloud/backend/framework/util/ZIP.class
 com/mobike/iotcloud/backend/framework/util/SleepUtil.class
 com/mobike/iotcloud/backend/framework/exception/GlobalExceptionHandler.class
@@ -49,8 +53,10 @@ com/mobike/iotcloud/backend/framework/util/ExpireSet$KeyValue.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$1.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestResponse.class
+com/mobike/iotcloud/backend/framework/dao/impl/DAO.class
 com/mobike/iotcloud/backend/framework/util/ValidateUtils.class
 com/mobike/iotcloud/backend/framework/controller/bean/AppUserAgent.class
+com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.class
 com/mobike/iotcloud/backend/framework/validate/Mobile.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestException.class
 com/mobike/iotcloud/backend/framework/util/CollectionUtil.class
@@ -65,11 +71,13 @@ com/mobike/iotcloud/backend/framework/validate/Phone.class
 com/mobike/iotcloud/backend/framework/util/AES128Factory.class
 com/mobike/iotcloud/backend/framework/exception/ValidateException.class
 com/mobike/iotcloud/backend/framework/util/TimeUtils.class
+com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$1.class
 com/mobike/iotcloud/backend/framework/util/JavaBeanSerializerUtil.class
 com/mobike/iotcloud/backend/framework/validate/PhoneValidator.class
 com/mobike/iotcloud/backend/framework/util/EmojiFilter.class
 com/mobike/iotcloud/backend/framework/util/OSUtil.class
 com/mobike/iotcloud/backend/framework/util/UserAgent.class
+com/mobike/iotcloud/backend/framework/autoconfig/HibernateAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/util/ExpireSet.class
 com/mobike/iotcloud/backend/framework/util/ExcelExportUtil.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$3.class
