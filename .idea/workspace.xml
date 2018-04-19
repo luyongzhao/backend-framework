@@ -2,51 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5f5f4df-d36b-4596-ad07-238035ff1b79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/HibernateAutoConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/HibernateProperties.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/DAO.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_2_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/MemoryCache.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/MemoryCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$2.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$3.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/dao/BasicDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/dao/BasicDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/HmacSHA1Signer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/AbstractRedisIDGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/IDGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDIncrementGeneratorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisOrderIDGeneratorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/TimedIdGeneratorImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/iotcloud-backend-framework-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/iotcloud-backend-framework-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iotcloudbackendframework.iml" afterPath="$PROJECT_DIR$/iotcloudbackendframework.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/MemoryCache.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/MemoryCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/BasicDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/BasicDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,107 +27,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BasicDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl.java">
+      <file leaf-file-name="RedisIDQueueGeneratorImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="203" column="34" lean-forward="false" selection-start-line="203" selection-start-column="34" selection-end-line="203" selection-end-column="34" />
+            <state relative-caret-position="165">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisIDIncrementGeneratorImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDIncrementGeneratorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisIDQueueFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#21459#21489#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/BasicDao.java">
+      <file leaf-file-name="RedisOrderIDGeneratorImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisOrderIDGeneratorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/IDGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/DAO.java">
+      <file leaf-file-name="TimedIdGeneratorImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/TimedIdGeneratorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="119" column="38" lean-forward="false" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final-sources.jar!/org/hibernate/Session.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="515" column="9" lean-forward="false" selection-start-line="515" selection-start-column="9" selection-end-line="515" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemcachedServiceSupport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemoryCache.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/MemoryCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalMemoryCacheImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="21" column="120" lean-forward="false" selection-start-line="21" selection-start-column="120" selection-end-line="21" selection-end-column="120" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisExpiredMemoryCacheImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java">
+      <file leaf-file-name="AbstractRedisIDGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/AbstractRedisIDGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cache.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4.jar!/net/sf/ehcache/Cache.class">
+      <file leaf-file-name="Signer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="1030" column="32" lean-forward="false" selection-start-line="1030" selection-start-column="32" selection-end-line="1030" selection-end-column="32" />
+            <state relative-caret-position="435">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SHA256withRSASigner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="162" column="21" lean-forward="false" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+            <state relative-caret-position="28">
+              <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HmacSHA1Signer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/HmacSHA1Signer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,12 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/exception/ValidateException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/interceptor/WebAppConfigurer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/util/ContextUrlUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/validate/MobileValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestPageLimit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/controller/bean/RestPageLimit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/exception/FinalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/PhoneValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/MobileValidator.java" />
@@ -246,6 +212,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/BasicDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/ISigner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/HmacSHA1Signer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/IDGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDIncrementGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisOrderIDGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/TimedIdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/TimedIdGeneratorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDIncrementGeneratorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/TimedIdGeneratorImpl.java" />
       </list>
     </option>
   </component>
@@ -322,7 +302,66 @@
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="id" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="id" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,11 +392,11 @@
       <recent name="com.mobike.iotcloud.backend.framework.cache.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id" />
       <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/database" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -464,7 +503,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523954703772</updated>
-      <workItem from="1523954707797" duration="33921000" />
+      <workItem from="1523954707797" duration="37278000" />
     </task>
     <task id="LOCAL-00001" summary="调整说明">
       <created>1524018647197</created>
@@ -487,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524020108179</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成初步的版本">
+      <created>1524128605591</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524128605591</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33921000" />
+    <option name="totallyTimeSpent" value="37278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -510,10 +556,10 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565324" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22893773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37871033" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22620267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -536,117 +582,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="调整说明" />
     <MESSAGE value="解决不能运行的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决不能运行的bug" />
+    <MESSAGE value="完成初步的版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成初步的版本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/PhoneValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/MobileValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/exception/ValidateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/exception/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/exception/FinalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/BasicValidateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/AppUserAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#427#428#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/MapBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -910,8 +853,8 @@
         <state relative-caret-position="315">
           <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="false" />
+            <element signature="e#377#378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -988,6 +931,104 @@
         <state relative-caret-position="480">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/ISigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/HmacSHA1Signer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/AbstractRedisIDGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/IDGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDIncrementGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisOrderIDGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/TimedIdGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
