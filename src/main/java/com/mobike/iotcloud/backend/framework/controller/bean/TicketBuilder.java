@@ -3,6 +3,7 @@ package com.mobike.iotcloud.backend.framework.controller.bean;
 import com.alibaba.fastjson.JSON;
 import com.mobike.iotcloud.backend.framework.util.AES128Factory;
 import com.mobike.iotcloud.backend.framework.util.JsonUtil;
+import com.mobike.iotcloud.backend.framework.util.ThreadLocalContext;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 
@@ -19,6 +20,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author luyongzhao
  */
 @Slf4j
+@Deprecated
 public class TicketBuilder {
 
     private static final Map<String, TicketBuilder> appID2TicketBuilder = new ConcurrentHashMap<String,TicketBuilder>();
@@ -28,9 +30,13 @@ public class TicketBuilder {
     //应用id，对于摩拜来讲就是账户id
     private String appID = null;
 
-    public static final String APP_ID_ATTR = "MOBIKE-ACCOUNT-ID";
+    public static final String ATTR_APP_ID = "MOBIKE-ACCOUNT-ID";
 
-    public static final String TICKET_ATTR = "MOBIKE-TICKET";
+    public static final String ATTR_TICKET = "MOBIKE-TICKET";
+
+    public static final String ATTR_TIMESTAMP = "MOBIKE-TIMESTAMP";
+
+    private static final int expiredSeconds = 30;
 
 
     private TicketBuilder() {
@@ -108,24 +114,79 @@ public class TicketBuilder {
     }
 
 
-    public AppUserAgent parse(HttpServletRequest req) {
+    /**
+     *
+     * @param req
+     * @param errorMsg 输出参数：解析过程中出现的错误信息
+     * @return
+     */
+    public AppUserAgent parse(HttpServletRequest req, final StringBuilder errorMsg) {
+
+        //进入的请求需要验证accountId和ticket
+        String appId = req.getHeader(TicketBuilder.ATTR_APP_ID);
+        String ticket = req.getHeader(TicketBuilder.ATTR_TICKET);
 
 
-        String ticket = req.getHeader(TICKET_ATTR);
+        String err = null;
 
-        AppUserAgent agent = null;
-        if (StringUtils.isNotBlank(ticket)) {
-            agent = decode(ticket);
-            if (agent == null) {
-                return null;
-            }
+        if (StringUtils.isBlank(appId)) {
+            err = "accountId is blank in header!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
         }
 
-        if (agent == null) {
-            agent = new AppUserAgent();
+        if (StringUtils.isBlank(ticket)) {
+            err = "ticket is blank in header!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
         }
 
-        return agent;
+        //TODO: 验证appId是否存在，是否合法
+
+        AppUserAgent appUserAgent = decode(ticket);
+        //解析失败则直接返回错误
+        if (appUserAgent == null) {
+
+            err = "fail to parse ticket!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
+        }
+
+        //应用（账户）id不一致，则直接返回错误
+        if (StringUtils.equals(appId,appUserAgent.getAccountId())) {
+
+            err = "appId in header not equals to the one in ticket!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
+        }
+
+        //随机数不能为空
+        if (StringUtils.isBlank(appUserAgent.getRandomStr())) {
+
+            err = "random string can not be empty!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
+        }
+
+        //验证请求是否失效
+        long now = System.currentTimeMillis();
+        if ( (now-appUserAgent.getTimestamp())/1000>expiredSeconds ) {
+
+            err = "request is expired!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
+        }
+
+        //加入threadlocal，便于后续执行方法中获取上下文信息，特别是accountId
+        ThreadLocalContext.put(AppUserAgent.class,appUserAgent);
+
+        return appUserAgent;
     }
 
     public static void main(String[] args) throws Exception {

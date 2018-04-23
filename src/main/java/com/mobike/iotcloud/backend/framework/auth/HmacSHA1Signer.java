@@ -23,7 +23,7 @@ import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
 
 /**
- * Created by haowei.yao on 2017/9/28.
+ * 使用签名算法的入口类
  */
 
 public class HmacSHA1Signer extends Signer{
