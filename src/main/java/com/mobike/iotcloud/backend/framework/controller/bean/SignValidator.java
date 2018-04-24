@@ -7,6 +7,8 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Enumeration;
 import java.util.Map;
 import java.util.TreeMap;
@@ -17,16 +19,17 @@ import java.util.TreeMap;
 @Slf4j
 public class SignValidator {
 
+    private static final String decode = "utf-8";
     //应用id，对于摩拜来讲就是账户id
     private String appID = null;
 
-    public static final String ATTR_APP_ID = "MOBIKE-ACCOUNT-ID";
+    public static final String ATTR_APP_ID = "mobike-account-id";
 
-    public static final String ATTR_TICKET = "MOBIKE-TICKET";
+    public static final String ATTR_SIGN = "mobike-sign";
 
-    public static final String ATTR_TIMESTAMP = "MOBIKE-TIMESTAMP";
+    public static final String ATTR_TIMESTAMP = "mobike-timestamp";
 
-    public static final String HEAD_ATTR = "MOBIKE-";
+    public static final String HEAD_ATTR = "mobike-";
 
     public static final String secret = "adkjffdkajkjkjnm";
 
@@ -63,7 +66,7 @@ public class SignValidator {
 
         //进入的请求需要验证accountId和ticket
         String appId = req.getHeader(ATTR_APP_ID);
-        String sign = req.getHeader(ATTR_TICKET);
+        String sign = req.getHeader(ATTR_SIGN);
         String timestamp = req.getHeader(ATTR_TIMESTAMP);
 
 
@@ -79,7 +82,7 @@ public class SignValidator {
 
         if (StringUtils.isBlank(sign)) {
 
-            err = ATTR_TICKET + " is blank in header!";
+            err = ATTR_SIGN + " is blank in header!";
             log.warn(err);
             errorMsg.append(err);
             return null;
@@ -115,7 +118,7 @@ public class SignValidator {
         //对数据进行签名，验证是否跟用户上传的一致
         boolean flag = validateSign(req, sign);
         if (!flag) {
-            err = ATTR_TICKET + " is invalid!";
+            err = ATTR_SIGN + " is invalid!";
             log.warn(err);
             errorMsg.append(err);
             return null;
@@ -142,24 +145,63 @@ public class SignValidator {
         while (enumeraton.hasMoreElements()) {
 
             String headerName = enumeraton.nextElement();
+
+
             if (headerName.startsWith(HEAD_ATTR)) {
                 sortMap.put(headerName, req.getHeader(headerName));
             }
         }
 
-        //获取请求中的参数
-        enumeraton = req.getParameterNames();
-        while (enumeraton.hasMoreElements()) {
+        //获取get请求中的参数(跟网上说法不一致，获取不到post中的参数)
+        Map<String,String[]> paramMap = req.getParameterMap();
 
-            String paramName = enumeraton.nextElement();
-            String paramVal = req.getParameter(paramName);
+        for(Map.Entry<String,String[]> entry : paramMap.entrySet()){
 
-            //参数有值才加入map
-            if (StringUtils.isNotBlank(paramVal)) {
+            if (entry.getValue()==null ||entry.getValue().length==0) {
+                continue;
+            }
 
-                sortMap.put(paramName, paramVal);
+            String key = entry.getKey();
+            for (String val : entry.getValue()) {
+
+                //空数据不参与签名
+                if (StringUtils.isBlank(val)) {
+                    continue;
+                }
+
+                sortMap.put(key,val);
             }
         }
+
+        //获取post方式url中的参数,TODO:很奇怪，post方式的获取不到查询字符串
+        req.getRequestURL();
+        String queryString = req.getQueryString();
+        log.debug("queryString:{}",queryString);
+        if (StringUtils.isNotBlank(queryString)) {
+
+            String[] params = queryString.split("&");
+            for (String param : params) {
+
+                if (param.indexOf('=') == -1) {
+                    continue;
+                }
+                String[] paramPair = param.split("=");
+                //去除不成对的和值为空的数据
+                if (paramPair.length <= 1 || StringUtils.isBlank(paramPair[1])) {
+                    continue;
+                }
+
+                try {
+                    sortMap.put(paramPair[0], URLDecoder.decode(paramPair[1],decode));
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+
+        //删除签名关键字
+        sortMap.remove(ATTR_SIGN);
 
         //按顺序拼接参数
         StringBuilder builder = new StringBuilder();
@@ -170,9 +212,11 @@ public class SignValidator {
 
         //去除最后的&
         String strToSign = builder.substring(0, builder.length() - 1);
+        log.debug("strToSign:{}",strToSign);
 
         //签名
         String newSign = Signer.getSigner(Signer.HMAC_SHA1).signString(strToSign, secret);
+        log.debug("compare sign,old sign:{},new sign:{}",sign,newSign);
 
         return newSign.equals(sign);
 

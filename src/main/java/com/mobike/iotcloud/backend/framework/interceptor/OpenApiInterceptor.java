@@ -28,7 +28,7 @@ public class OpenApiInterceptor implements HandlerInterceptor {
         log.debug("open api interceptor is calling...");
 
 
-        /**
+
 
         final StringBuilder errMsg = new StringBuilder();
 
@@ -42,7 +42,7 @@ public class OpenApiInterceptor implements HandlerInterceptor {
             return false;
         }
 
-         **/
+
         return true;
     }
 
