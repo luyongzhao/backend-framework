@@ -1,5 +1,6 @@
 package com.mobike.iotcloud.backend.framework.id.impl;
 
+import com.mobike.iotcloud.backend.framework.cache.PersistentCache;
 import com.mobike.iotcloud.backend.framework.id.AbstractRedisIDGenerator;
 import redis.clients.jedis.PipelineBlock;
 
@@ -19,7 +20,19 @@ public class RedisIDQueueGeneratorImpl extends AbstractRedisIDGenerator {
     private int nextIndex;
     private int maxIdx;
 
-    public void init() {
+    public RedisIDQueueGeneratorImpl(){
+
+    }
+
+
+    public RedisIDQueueGeneratorImpl(String key, int cacheSize, PersistentCache persistentCache){
+
+        super.key = key;
+        super.persistentCache = persistentCache;
+        super.cacheSize = cacheSize;
+    }
+
+    public RedisIDQueueGeneratorImpl init() {
         super.init();
 
         queue = new ArrayList<String>(cacheSize.intValue());
@@ -27,6 +40,8 @@ public class RedisIDQueueGeneratorImpl extends AbstractRedisIDGenerator {
             queue.add("");
         }
         maxIdx = nextIndex = cacheSize - 1;
+
+        return this;
     }
 
     @Override

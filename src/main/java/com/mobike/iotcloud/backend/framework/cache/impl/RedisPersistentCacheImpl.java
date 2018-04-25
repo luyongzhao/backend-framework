@@ -22,6 +22,15 @@ public class RedisPersistentCacheImpl implements PersistentCache {
 
     private Pool<Jedis> pool = null;
 
+    public RedisPersistentCacheImpl(){
+
+    }
+
+    public RedisPersistentCacheImpl(Pool<Jedis> pool){
+
+        this.pool = pool;
+    }
+
     @Override
     public int lreplaceReturnLength(String key, String oldValue, String newValue) {
         Jedis jedis = null;

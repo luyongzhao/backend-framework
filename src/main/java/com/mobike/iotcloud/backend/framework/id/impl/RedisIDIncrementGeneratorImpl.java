@@ -1,7 +1,9 @@
 package com.mobike.iotcloud.backend.framework.id.impl;
 
 
+import com.mobike.iotcloud.backend.framework.cache.PersistentCache;
 import com.mobike.iotcloud.backend.framework.id.AbstractRedisIDGenerator;
+import org.springframework.stereotype.Service;
 
 /**
  * 通过redis实现的自增id生成器<br />
@@ -13,15 +15,31 @@ import com.mobike.iotcloud.backend.framework.id.AbstractRedisIDGenerator;
  * protected Redis redis;// redis引用
  * </pre>
  *
- * @author leo
+ * @author luyongzhao
  */
 public class RedisIDIncrementGeneratorImpl extends AbstractRedisIDGenerator {
+
     protected Long initValue = 100L;
 
     private long nextId = 0L;
     private long maxId = 0L;
 
-    public void init() {
+    public RedisIDIncrementGeneratorImpl(){
+
+    }
+
+
+    public RedisIDIncrementGeneratorImpl(String key, int cacheSize, long initValue, PersistentCache persistentCache){
+
+        super.key = key;
+        super.persistentCache = persistentCache;
+        super.cacheSize = cacheSize;
+        this.initValue = initValue;
+    }
+
+
+
+    public RedisIDIncrementGeneratorImpl init() {
         super.init();
 
         if (!persistentCache.exists(key)) {
@@ -30,6 +48,8 @@ public class RedisIDIncrementGeneratorImpl extends AbstractRedisIDGenerator {
 
             persistentCache.set(key, String.valueOf(maxId));
         }
+
+        return this;
     }
 
     public String nextStringID() {

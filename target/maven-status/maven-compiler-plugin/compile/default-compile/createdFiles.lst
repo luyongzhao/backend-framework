@@ -5,6 +5,7 @@ com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl.class
 com/mobike/iotcloud/backend/framework/generator/Column.class
 com/mobike/iotcloud/backend/framework/validate/Phone$List.class
 com/mobike/iotcloud/backend/framework/generator/DTOGenderator.class
+com/mobike/iotcloud/backend/framework/id/impl/RandomIdGeneratorImpl.class
 com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$2.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$2.class
 com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.class
@@ -27,6 +28,7 @@ com/mobike/iotcloud/backend/framework/id/impl/RedisOrderIDGeneratorImpl.class
 com/mobike/iotcloud/backend/framework/dao/dto/DtoIdxSupport.class
 com/mobike/iotcloud/backend/framework/util/ContextUrlUtil.class
 com/mobike/iotcloud/backend/framework/util/AES128.class
+com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheProperties$PoolConfig.class
 com/mobike/iotcloud/backend/framework/controller/bean/TicketBuilder.class
 com/mobike/iotcloud/backend/framework/util/ExpireSet$KeyValue.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$1.class
@@ -42,6 +44,7 @@ com/mobike/iotcloud/backend/framework/util/AjaxUtils.class
 com/mobike/iotcloud/backend/framework/validate/Mobile$List.class
 com/mobike/iotcloud/backend/framework/generator/ServiceGendertor.class
 com/mobike/iotcloud/backend/framework/util/MathDouble.class
+com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorProperties.class
 com/mobike/iotcloud/backend/framework/util/JsonUtil.class
 com/mobike/iotcloud/backend/framework/validate/Phone.class
 com/mobike/iotcloud/backend/framework/exception/ValidateException.class
@@ -53,6 +56,7 @@ com/mobike/iotcloud/backend/framework/util/OSUtil.class
 com/mobike/iotcloud/backend/framework/autoconfig/HibernateAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/util/ExpireSet.class
 com/mobike/iotcloud/backend/framework/util/ExcelExportUtil.class
+com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestPageMore.class
 com/mobike/iotcloud/backend/framework/util/DateUtils.class
 com/mobike/iotcloud/backend/framework/util/MD5.class
@@ -81,14 +85,18 @@ com/mobike/iotcloud/backend/framework/generator/Table.class
 com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl$1.class
 com/mobike/iotcloud/backend/framework/service/ServiceSupport.class
 com/mobike/iotcloud/backend/framework/util/NumberX.class
+com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorProperties$IncrGenerator.class
 com/mobike/iotcloud/backend/framework/dao/BasicDao.class
 com/mobike/iotcloud/backend/framework/id/IDGenerator.class
 com/mobike/iotcloud/backend/framework/controller/bean/MapBean.class
 com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.class
+com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestResponse.class
 com/mobike/iotcloud/backend/framework/util/ValidateUtils.class
+com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorProperties$QueueGenerator.class
 com/mobike/iotcloud/backend/framework/generator/DBUtil.class
 com/mobike/iotcloud/backend/framework/util/TimeUtils$SECS.class
+com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheProperties.class
 com/mobike/iotcloud/backend/framework/generator/IndexHtmGendertor.class
 com/mobike/iotcloud/backend/framework/generator/ApiControllerGendertor.class
 com/mobike/iotcloud/backend/framework/id/AbstractRedisIDGenerator.class

@@ -21,13 +21,6 @@ public class NumberX
 	public static NumberX Number2 = new NumberX("01");
 	public static NumberX Number16 = new NumberX("0123456789ABCDEF");
 
-	public static void main(String[] args)
-	{
-		System.out.println((int) '0');
-		System.out.println((int) 'A');
-		System.out.println((int) 'a');
-
-	}
 
 	public String number10ToX(long num, int fixedLength)
 	{
@@ -107,5 +100,21 @@ public class NumberX
 	private int BASE = CHARS.length();
 	private Map<String, Integer> CHAR_INDEX_MAP = new HashMap<String, Integer>(
 			BASE);
+
+
+	public static void main(String args[]){
+
+		for (int i=0; i<100; i++){
+			String num = NumberX.Number62.number10ToX(System.currentTimeMillis());
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(num);
+		}
+
+
+	}
 
 }

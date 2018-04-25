@@ -14,6 +14,7 @@ import java.util.*;
  * @author luyongzhao
  */
 public class RedisIDQueueFactory {
+
     public static void main(String[] args) throws Exception {
         String host = "127.0.0.1";
         // String key = "_CORE_MEETIN_ORDER_ID_QUEUE";
