@@ -18,7 +18,7 @@ import java.util.Map;
  */
 public class ViewHtmGendertor {
 	
-	public static String TEMPLATE = "viewHtm.ftl";
+	public static String TEMPLATE = "ViewHtm.ftl";
 	
 	private static Configuration cfg = new Configuration();
 	

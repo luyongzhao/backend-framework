@@ -12,6 +12,7 @@ com/mobike/iotcloud/backend/framework/cache/PersistentCache.class
 com/mobike/iotcloud/backend/framework/cache/MemoryCache.class
 com/mobike/iotcloud/backend/framework/generator/ViewHtmGendertor.class
 com/mobike/iotcloud/backend/framework/util/ExcelUtil.class
+com/mobike/iotcloud/backend/framework/generator/WebControllerGendertor.class
 com/mobike/iotcloud/backend/framework/autoconfig/HibernateProperties.class
 com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.class
 com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.class
@@ -39,6 +40,7 @@ com/mobike/iotcloud/backend/framework/controller/bean/RestException.class
 com/mobike/iotcloud/backend/framework/util/CollectionUtil.class
 com/mobike/iotcloud/backend/framework/util/AjaxUtils.class
 com/mobike/iotcloud/backend/framework/validate/Mobile$List.class
+com/mobike/iotcloud/backend/framework/generator/ServiceGendertor.class
 com/mobike/iotcloud/backend/framework/util/MathDouble.class
 com/mobike/iotcloud/backend/framework/util/JsonUtil.class
 com/mobike/iotcloud/backend/framework/validate/Phone.class
@@ -55,7 +57,6 @@ com/mobike/iotcloud/backend/framework/controller/bean/RestPageMore.class
 com/mobike/iotcloud/backend/framework/util/DateUtils.class
 com/mobike/iotcloud/backend/framework/util/MD5.class
 com/mobike/iotcloud/backend/framework/controller/bean/PageLimit.class
-com/mobike/iotcloud/backend/framework/generator/FacadeGendertor.class
 com/mobike/iotcloud/backend/framework/util/QRCodeUtil.class
 com/mobike/iotcloud/backend/framework/exception/FinalExceptionHandler.class
 com/mobike/iotcloud/backend/framework/service/ServiceSupport$1.class
@@ -84,12 +85,12 @@ com/mobike/iotcloud/backend/framework/dao/BasicDao.class
 com/mobike/iotcloud/backend/framework/id/IDGenerator.class
 com/mobike/iotcloud/backend/framework/controller/bean/MapBean.class
 com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.class
-com/mobike/iotcloud/backend/framework/generator/ControllerGendertor.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestResponse.class
 com/mobike/iotcloud/backend/framework/util/ValidateUtils.class
 com/mobike/iotcloud/backend/framework/generator/DBUtil.class
 com/mobike/iotcloud/backend/framework/util/TimeUtils$SECS.class
 com/mobike/iotcloud/backend/framework/generator/IndexHtmGendertor.class
+com/mobike/iotcloud/backend/framework/generator/ApiControllerGendertor.class
 com/mobike/iotcloud/backend/framework/id/AbstractRedisIDGenerator.class
 com/mobike/iotcloud/backend/framework/util/RandomUtil.class
 com/mobike/iotcloud/backend/framework/controller/bean/SignValidator.class

@@ -8,6 +8,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/validate/MobileValidator.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/exception/ValidateException.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/ServiceGendertor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/FFMpegUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/JoinHelper.java
@@ -26,7 +27,6 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/JsonUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/QRCodeUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.java
-/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/FacadeGendertor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/BasicValidateController.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java
@@ -70,18 +70,19 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/IndexHtmGendertor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/NumberX.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/PageLimit.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/ApiControllerGendertor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/DateUtils.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/SHA1.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/StringEscape.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/RandomUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/TimeUtils.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/WebControllerGendertor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/ClassUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/StringHelper.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/ThreadLocalContext.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/CollectionUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/OSUtil.java
-/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/ControllerGendertor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/SignValidator.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/CookiesUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/AES128Factory.java

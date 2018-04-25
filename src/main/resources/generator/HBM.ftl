@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="${pkgName}.${table.name}" table="${table.name}">
+	<class name="${pkgName}.${table.className}" table="${table.name}">
 	
 	<#list table.columns as col>
 		<#if col.code == "id">

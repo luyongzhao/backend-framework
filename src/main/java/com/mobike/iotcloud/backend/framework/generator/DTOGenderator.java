@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,9 +21,9 @@ public class DTOGenderator {
 
     private Configuration cfg = new Configuration();
 
-    public static final String HBM_TEMPLATE = "hbm.ftl";
-    public static final String ABSTRACT_DTO_TEMPLATE = "abstractdto.ftl";
-    public static final String DTO_TEMPLATE = "dto.ftl";
+    public static final String HBM_TEMPLATE = "generator/HBM.ftl";
+    public static final String ABSTRACT_DTO_TEMPLATE = "generator/AbstractDto.ftl";
+    public static final String DTO_TEMPLATE = "generator/DTO.ftl";
 
 
     private void init() throws IOException {
@@ -92,7 +91,7 @@ public class DTOGenderator {
         datas.put("table", table);
         datas.put("pkgName", pkgName);
 
-        FileWriter fw = new FileWriter(new File(hbmDir, table.getName() + ".hbm.xml"));
+        FileWriter fw = new FileWriter(new File(hbmDir, table.getClassName() + ".hbm.xml"));
         cfg.getTemplate(HBM_TEMPLATE).process(datas, fw);
         IOUtils.closeQuietly(fw);
 

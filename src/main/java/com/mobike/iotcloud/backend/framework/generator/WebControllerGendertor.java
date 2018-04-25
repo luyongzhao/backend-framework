@@ -7,24 +7,23 @@ import org.apache.commons.io.IOUtils;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStream;
-import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 列表页面生成
+ * 业务逻辑生成模板
  * @author luyongzhao
  *
  */
-public class IndexHtmGendertor {
+public class WebControllerGendertor {
 	
-	public static String TEMPLATE = "IndexHtm.ftl";
+	public static String FACADE_TEMPLATE = "generator/WebController.ftl";
 	
 	private static Configuration cfg = new Configuration();
 	
 	static{
 		StringTemplateLoader templates = new StringTemplateLoader();
-		templates.putTemplate(TEMPLATE, templateContent(TEMPLATE));
+		templates.putTemplate(FACADE_TEMPLATE, templateContent(FACADE_TEMPLATE));
 		cfg.setTemplateLoader(templates);
 	}
 	
@@ -43,7 +42,7 @@ public class IndexHtmGendertor {
 		}
 	}
 	
-	public static void generator(String className,String storePath){
+	public static void generator(String storePath, String entityName, String pkgName){
 		
 		File dir = new File(storePath);
 		if (!dir.exists())
@@ -51,16 +50,14 @@ public class IndexHtmGendertor {
 			dir.mkdirs();
 		}
 
-		Connection conn = DBUtil.getConn();
-		Table table = DBUtil.getTable(className, className.toLowerCase(), conn);
-		
 		Map<String, Object> datas = new HashMap<String, Object>();
-		datas.put("table", table);
+		datas.put("entityName", entityName);
+		datas.put("pkgName", pkgName);
 		
 		FileWriter fw = null;
 		try {
-			fw = new FileWriter(new File(dir, "index.htm"));
-			cfg.getTemplate(TEMPLATE).process(datas, fw);
+			fw = new FileWriter(new File(dir, entityName + "Controller.java"));
+			cfg.getTemplate(FACADE_TEMPLATE).process(datas, fw);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

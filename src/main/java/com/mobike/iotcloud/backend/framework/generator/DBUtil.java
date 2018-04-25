@@ -46,7 +46,7 @@ public class DBUtil {
             Statement stmt = conn.createStatement();
             ResultSet singleTableRS = stmt.executeQuery("SHOW FULL COLUMNS FROM " + tableName);
 
-            table = new Table(className, null);
+            table = new Table(className, tableName,null);
             while (singleTableRS.next()) {
                 Column column = new Column(singleTableRS.getString("Field"), singleTableRS.getString("Comment"), singleTableRS.getString("Type"), singleTableRS.getString("Null"));
                 table.getColumns().add(column);

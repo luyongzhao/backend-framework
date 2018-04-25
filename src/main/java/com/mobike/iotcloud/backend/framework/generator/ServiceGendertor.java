@@ -15,21 +15,25 @@ import java.util.Map;
  * @author luyongzhao
  *
  */
-public class ControllerGendertor {
+public class ServiceGendertor {
 	
-	public static String FACADE_TEMPLATE = "controller.ftl";
+	public static String SERVICE_IMPL_TEMPLATE = "generator/ServiceImpl.ftl";
+	public static String SERVICE_TEMPLATE = "generator/Service.ftl";
+
+	//public static String MONGODB_FACADE_TEMPLATE = "mongodbFacade.ftl";
 	
 	private static Configuration cfg = new Configuration();
 	
 	static{
 		StringTemplateLoader templates = new StringTemplateLoader();
-		templates.putTemplate(FACADE_TEMPLATE, templateContent(FACADE_TEMPLATE));
+		templates.putTemplate(SERVICE_IMPL_TEMPLATE, templateContent(SERVICE_IMPL_TEMPLATE));
+		templates.putTemplate(SERVICE_TEMPLATE, templateContent(SERVICE_TEMPLATE));
 		cfg.setTemplateLoader(templates);
 	}
 	
 	private static String templateContent(String file)
 	{
-		InputStream in = DTOGenderator.class.getResourceAsStream(file);
+		InputStream in = DTOGenderator.class.getClassLoader().getResourceAsStream(file);
 		try
 		{
 			return IOUtils.toString(in);
@@ -42,7 +46,7 @@ public class ControllerGendertor {
 		}
 	}
 	
-	public static void generator(String storePath, String entityName, String pkgName){
+	public static void generator(String storePath, String entityName, String entityDesc, String pkgName, String entityPkgName){
 		
 		File dir = new File(storePath);
 		if (!dir.exists())
@@ -53,11 +57,17 @@ public class ControllerGendertor {
 		Map<String, Object> datas = new HashMap<String, Object>();
 		datas.put("entityName", entityName);
 		datas.put("pkgName", pkgName);
+		datas.put("entityDesc", entityDesc);
+		datas.put("entityPkgName", entityPkgName);
 		
 		FileWriter fw = null;
 		try {
-			fw = new FileWriter(new File(dir, entityName + "Controller.java"));
-			cfg.getTemplate(FACADE_TEMPLATE).process(datas, fw);
+			fw = new FileWriter(new File(dir+"/impl", entityName + "ServiceImpl.java"));
+			cfg.getTemplate(SERVICE_IMPL_TEMPLATE).process(datas, fw);
+
+			fw = new FileWriter(new File(dir, entityName + "Service.java"));
+			cfg.getTemplate(SERVICE_TEMPLATE).process(datas, fw);
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
