@@ -25,20 +25,9 @@ public class Abstract${table.className} implements DtoSupport
 	private ${col.type} ${col.code};
 </#list>
 
-	public Abstract${table.name}()
+	public Abstract${table.className}()
 	{
 
 	}
 
-<#list table.columns as col>
-	public ${col.type} get${col.code?cap_first}()
-	{
-		return this.${col.code};
-	}
-
-	public void set${col.code?cap_first}(${col.type} ${col.code})
-	{
-		this.${col.code} = ${col.code};
-	}
-</#list>
 }
