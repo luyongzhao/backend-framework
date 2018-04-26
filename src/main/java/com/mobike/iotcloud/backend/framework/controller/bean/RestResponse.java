@@ -125,6 +125,11 @@ public class RestResponse implements Serializable {
         return rest;
     }
 
+    public boolean isSuccess(){
+
+        return code == RESULT_CODE.success;
+    }
+
     public Integer getCode() {
         return code;
     }
