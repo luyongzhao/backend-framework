@@ -9,6 +9,7 @@ com/mobike/iotcloud/backend/framework/id/impl/RandomIdGeneratorImpl.class
 com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$2.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$2.class
 com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.class
+com/mobike/iotcloud/backend/framework/autoconfig/RedisIDQueueGeneratorAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/cache/PersistentCache.class
 com/mobike/iotcloud/backend/framework/cache/MemoryCache.class
 com/mobike/iotcloud/backend/framework/generator/ViewHtmGendertor.class
@@ -21,6 +22,7 @@ com/mobike/iotcloud/backend/framework/controller/bean/RestPageLimit.class
 com/mobike/iotcloud/backend/framework/util/SleepUtil.class
 com/mobike/iotcloud/backend/framework/exception/GlobalExceptionHandler.class
 com/mobike/iotcloud/backend/framework/util/BeanPropCopyUtil.class
+com/mobike/iotcloud/backend/framework/util/GenericsUtil.class
 com/mobike/iotcloud/backend/framework/util/ExpireSet$1.class
 com/mobike/iotcloud/backend/framework/util/UUID.class
 com/mobike/iotcloud/backend/framework/util/StringHelper.class
@@ -56,13 +58,13 @@ com/mobike/iotcloud/backend/framework/util/OSUtil.class
 com/mobike/iotcloud/backend/framework/autoconfig/HibernateAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/util/ExpireSet.class
 com/mobike/iotcloud/backend/framework/util/ExcelExportUtil.class
-com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/controller/bean/RestPageMore.class
 com/mobike/iotcloud/backend/framework/util/DateUtils.class
 com/mobike/iotcloud/backend/framework/util/MD5.class
 com/mobike/iotcloud/backend/framework/controller/bean/PageLimit.class
 com/mobike/iotcloud/backend/framework/util/QRCodeUtil.class
 com/mobike/iotcloud/backend/framework/exception/FinalExceptionHandler.class
+com/mobike/iotcloud/backend/framework/autoconfig/RedisIDIncreaseGeneratorAutoConfiguration.class
 com/mobike/iotcloud/backend/framework/service/ServiceSupport$1.class
 com/mobike/iotcloud/backend/framework/util/DES.class
 com/mobike/iotcloud/backend/framework/util/URLUtil.class
@@ -71,6 +73,7 @@ com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.class
 com/mobike/iotcloud/backend/framework/util/StringEscape.class
 com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.class
 com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.class
+com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl$1.class
 com/mobike/iotcloud/backend/framework/util/ClassUtil.class
 com/mobike/iotcloud/backend/framework/util/CookiesUtil.class
 com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$3.class

@@ -3,6 +3,7 @@ package com.mobike.iotcloud.backend.framework.cache;
 import redis.clients.jedis.*;
 import redis.clients.util.Slowlog;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -28,6 +29,7 @@ public interface PersistentCache {
     String set(String key, String value);
 
     String get(String key);
+
 
     Integer getInt(String key);
 

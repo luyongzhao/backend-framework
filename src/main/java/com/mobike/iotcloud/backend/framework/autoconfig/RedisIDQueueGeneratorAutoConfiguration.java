@@ -14,13 +14,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties({RedisIDGeneratorProperties.IncrGenerator.class,RedisIDGeneratorProperties.QueueGenerator.class})
+@EnableConfigurationProperties({RedisIDGeneratorProperties.QueueGenerator.class})
 @Slf4j
-public class RedisIDGeneratorAutoConfiguration {
+@ConditionalOnProperty(name = "id.generator.queue.key")
+public class RedisIDQueueGeneratorAutoConfiguration {
 
-
-    @Autowired
-    private RedisIDGeneratorProperties.IncrGenerator incrGenerator;
 
     @Autowired
     private RedisIDGeneratorProperties.QueueGenerator queueGenerator;
@@ -28,23 +26,8 @@ public class RedisIDGeneratorAutoConfiguration {
     @Autowired
     private PersistentCache persistentCache;
 
-    @Bean("increaseGenerator")
-    @ConditionalOnProperty(name = "id.generator.incr.key")
-    public IDGenerator getRedisIDIncreatementGenerator() {
-
-        String key = incrGenerator.getKey();
-
-        if (StringUtils.isBlank(key)) {
-
-            throw new RuntimeException("\"id.generator.incr.key\" should be added to application.properties!");
-        }
-
-        return new RedisIDIncrementGeneratorImpl(incrGenerator.getKey(), incrGenerator.getCacheSize(), incrGenerator.getInitValue(), persistentCache).init();
-    }
-
 
     @Bean("queueGenerator")
-    @ConditionalOnProperty(name = "id.generator.queue.key")
     public IDGenerator getRedisIDQueueGenerator() {
 
         String key = queueGenerator.getKey();

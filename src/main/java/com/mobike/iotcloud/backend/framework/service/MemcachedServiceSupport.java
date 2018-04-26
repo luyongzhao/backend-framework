@@ -3,6 +3,7 @@ package com.mobike.iotcloud.backend.framework.service;
 import com.mobike.iotcloud.backend.framework.cache.MemoryCache;
 import com.mobike.iotcloud.backend.framework.dao.BasicDao;
 import com.mobike.iotcloud.backend.framework.dao.dto.DtoSupport;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 import java.util.*;
@@ -12,6 +13,7 @@ import java.util.*;
  *
  * @author luyongzhao
  */
+@Slf4j
 public abstract class MemcachedServiceSupport extends ServiceSupport {
 
 
@@ -48,6 +50,7 @@ public abstract class MemcachedServiceSupport extends ServiceSupport {
         //保存数据到数据库
         basicDao.save(t);
 
+        log.debug("save in cache,key={},val={}",key,t.getClass().getName());
         //保存数据到缓存
         memcached.put(key, t);
 

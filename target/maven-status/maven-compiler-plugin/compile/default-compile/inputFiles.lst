@@ -60,10 +60,10 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/cache/PersistentCache.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/DAO.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java
-/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorAutoConfiguration.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/ExpireSet.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/TicketBuilder.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/GenericsUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/exception/FinalExceptionHandler.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.java
@@ -72,6 +72,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisOrderIDGeneratorImpl.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/HibernateAutoConfiguration.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/Table.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDQueueGeneratorAutoConfiguration.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/Configs.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/id/AbstractRedisIDGenerator.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/ExcelExportUtil.java
@@ -85,6 +86,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/NumberX.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/PageLimit.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/generator/ApiControllerGendertor.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDIncreaseGeneratorAutoConfiguration.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/StringEscape.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/RandomUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/TimeUtils.java

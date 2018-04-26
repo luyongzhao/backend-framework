@@ -93,7 +93,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
      * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hoset(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hoset(java.lang.String,
 	 * java.lang.Object)
 	 */
     @Override
@@ -104,7 +104,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#ping()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#ping()
 	 */
     @Override
     public String ping() {
@@ -121,7 +121,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#set(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#set(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -140,7 +140,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#get(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#get(java.lang.String)
 	 */
     @Override
     public String get(String key) {
@@ -158,7 +158,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getInt(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getInt(java.lang.String)
 	 */
     @Override
     public Integer getInt(String key) {
@@ -168,7 +168,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#set(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#set(byte[], byte[])
 	 */
     @Override
     public String set(byte[] key, byte[] value) {
@@ -186,7 +186,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#quit()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#quit()
 	 */
     @Override
     public String quit() {
@@ -204,7 +204,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#exists(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#exists(java.lang.String)
 	 */
     @Override
     public Boolean exists(String key) {
@@ -221,7 +221,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#get(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#get(byte[])
 	 */
     @Override
     public byte[] get(byte[] key) {
@@ -240,7 +240,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#del(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#del(java.lang.String)
 	 */
     @Override
     public Long del(String... keys) {
@@ -258,7 +258,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#exists(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#exists(byte[])
 	 */
     @Override
     public Boolean exists(byte[] key) {
@@ -276,7 +276,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#type(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#type(java.lang.String)
 	 */
     @Override
     public String type(String key) {
@@ -294,7 +294,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#flushDB()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#flushDB()
 	 */
     @Override
     public String flushDB() {
@@ -312,7 +312,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#del(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#del(byte)
 	 */
     @Override
     public Long del(byte[]... keys) {
@@ -330,7 +330,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#keys(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#keys(java.lang.String)
 	 */
     @Override
     public Set<String> keys(String pattern) {
@@ -348,7 +348,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#type(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#type(byte[])
 	 */
     @Override
     public String type(byte[] key) {
@@ -366,7 +366,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#randomKey()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#randomKey()
 	 */
     @Override
     public String randomKey() {
@@ -384,7 +384,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#keys(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#keys(byte[])
 	 */
     @Override
     public Set<byte[]> keys(byte[] pattern) {
@@ -402,7 +402,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rename(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rename(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -421,7 +421,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#renamenx(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#renamenx(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -440,7 +440,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#randomBinaryKey()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#randomBinaryKey()
 	 */
     @Override
     public byte[] randomBinaryKey() {
@@ -458,7 +458,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rename(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rename(byte[], byte[])
 	 */
     @Override
     public String rename(byte[] oldkey, byte[] newkey) {
@@ -476,7 +476,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#expire(java.lang.String, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#expire(java.lang.String, int)
 	 */
     @Override
     public Long expire(String key, int seconds) {
@@ -494,7 +494,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#renamenx(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#renamenx(byte[], byte[])
 	 */
     @Override
     public Long renamenx(byte[] oldkey, byte[] newkey) {
@@ -512,7 +512,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#expireAt(java.lang.String, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#expireAt(java.lang.String, long)
 	 */
     @Override
     public Long expireAt(String key, long unixTime) {
@@ -530,7 +530,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#dbSize()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#dbSize()
 	 */
     @Override
     public Long dbSize() {
@@ -548,7 +548,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#ttl(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#ttl(java.lang.String)
 	 */
     @Override
     public Long ttl(String key) {
@@ -566,7 +566,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#expire(byte[], int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#expire(byte[], int)
 	 */
     @Override
     public Long expire(byte[] key, int seconds) {
@@ -584,7 +584,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#select(int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#select(int)
 	 */
     @Override
     public String select(int index) {
@@ -602,7 +602,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#move(java.lang.String, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#move(java.lang.String, int)
 	 */
     @Override
     public Long move(String key, int dbIndex) {
@@ -620,7 +620,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#expireAt(byte[], long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#expireAt(byte[], long)
 	 */
     @Override
     public Long expireAt(byte[] key, long unixTime) {
@@ -638,7 +638,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#flushAll()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#flushAll()
 	 */
     @Override
     public String flushAll() {
@@ -656,7 +656,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#ttl(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#ttl(byte[])
 	 */
     @Override
     public Long ttl(byte[] key) {
@@ -674,7 +674,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getSet(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getSet(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -693,7 +693,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#mget(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#mget(java.lang.String)
 	 */
     @Override
     public List<String> mget(String... keys) {
@@ -711,7 +711,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#mgetInt(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#mgetInt(java.lang.String)
 	 */
     @Override
     public List<Integer> mgetInt(String... keys) {
@@ -730,7 +730,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#move(byte[], int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#move(byte[], int)
 	 */
     @Override
     public Long move(byte[] key, int dbIndex) {
@@ -748,7 +748,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setnx(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setnx(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -767,7 +767,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getSet(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getSet(byte[], byte[])
 	 */
     @Override
     public byte[] getSet(byte[] key, byte[] value) {
@@ -785,7 +785,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setex(java.lang.String, int,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setex(java.lang.String, int,
 	 * java.lang.String)
 	 */
     @Override
@@ -804,7 +804,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#mget(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#mget(byte)
 	 */
     @Override
     public List<byte[]> mget(byte[]... keys) {
@@ -822,7 +822,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#mset(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#mset(java.lang.String)
 	 */
     @Override
     public String mset(String... keysvalues) {
@@ -840,7 +840,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setnx(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setnx(byte[], byte[])
 	 */
     @Override
     public Long setnx(byte[] key, byte[] value) {
@@ -858,7 +858,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#msetnx(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#msetnx(java.lang.String)
 	 */
     @Override
     public Long msetnx(String... keysvalues) {
@@ -876,7 +876,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setex(byte[], int, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setex(byte[], int, byte[])
 	 */
     @Override
     public String setex(byte[] key, int seconds, byte[] value) {
@@ -894,7 +894,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#decrBy(java.lang.String, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#decrBy(java.lang.String, long)
 	 */
     @Override
     public Long decrBy(String key, long integer) {
@@ -912,7 +912,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#mset(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#mset(byte)
 	 */
     @Override
     public String mset(byte[]... keysvalues) {
@@ -930,7 +930,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#decr(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#decr(java.lang.String)
 	 */
     @Override
     public Long decr(String key) {
@@ -948,7 +948,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#incrBy(java.lang.String, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#incrBy(java.lang.String, long)
 	 */
     @Override
     public Long incrBy(String key, long integer) {
@@ -966,7 +966,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#msetnx(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#msetnx(byte)
 	 */
     @Override
     public Long msetnx(byte[]... keysvalues) {
@@ -984,7 +984,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#incr(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#incr(java.lang.String)
 	 */
     @Override
     public Long incr(String key) {
@@ -1002,7 +1002,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#decrBy(byte[], long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#decrBy(byte[], long)
 	 */
     @Override
     public Long decrBy(byte[] key, long integer) {
@@ -1020,7 +1020,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#append(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#append(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1039,7 +1039,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#decr(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#decr(byte[])
 	 */
     @Override
     public Long decr(byte[] key) {
@@ -1057,7 +1057,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#substr(java.lang.String, int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#substr(java.lang.String, int, int)
 	 */
     @Override
     public String substr(String key, int start, int end) {
@@ -1075,7 +1075,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#incrBy(byte[], long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#incrBy(byte[], long)
 	 */
     @Override
     public Long incrBy(byte[] key, long integer) {
@@ -1093,7 +1093,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hset(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hset(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -1112,7 +1112,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#incr(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#incr(byte[])
 	 */
     @Override
     public Long incr(byte[] key) {
@@ -1130,7 +1130,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#append(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#append(byte[], byte[])
 	 */
     @Override
     public Long append(byte[] key, byte[] value) {
@@ -1148,7 +1148,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hget(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hget(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1167,7 +1167,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#substr(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#substr(byte[], int, int)
 	 */
     @Override
     public byte[] substr(byte[] key, int start, int end) {
@@ -1185,7 +1185,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hsetnx(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hsetnx(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -1204,7 +1204,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hset(byte[], byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hset(byte[], byte[], byte[])
 	 */
     @Override
     public Long hset(byte[] key, byte[] field, byte[] value) {
@@ -1222,7 +1222,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hmset(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hmset(java.lang.String,
 	 * java.util.Map)
 	 */
     @Override
@@ -1241,7 +1241,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hget(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hget(byte[], byte[])
 	 */
     @Override
     public byte[] hget(byte[] key, byte[] field) {
@@ -1259,7 +1259,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hmget(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hmget(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1278,7 +1278,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hsetnx(byte[], byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hsetnx(byte[], byte[], byte[])
 	 */
     @Override
     public Long hsetnx(byte[] key, byte[] field, byte[] value) {
@@ -1296,7 +1296,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hincrBy(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hincrBy(java.lang.String,
 	 * java.lang.String, long)
 	 */
     @Override
@@ -1315,7 +1315,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hmset(byte[], java.util.Map)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hmset(byte[], java.util.Map)
 	 */
     @Override
     public String hmset(byte[] key, Map<byte[], byte[]> hash) {
@@ -1333,7 +1333,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hexists(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hexists(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1352,7 +1352,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hmget(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hmget(byte[], byte)
 	 */
     @Override
     public List<byte[]> hmget(byte[] key, byte[]... fields) {
@@ -1370,7 +1370,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hdel(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hdel(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1389,7 +1389,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hincrBy(byte[], byte[], long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hincrBy(byte[], byte[], long)
 	 */
     @Override
     public Long hincrBy(byte[] key, byte[] field, long value) {
@@ -1407,7 +1407,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hlen(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hlen(java.lang.String)
 	 */
     @Override
     public Long hlen(String key) {
@@ -1425,7 +1425,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hexists(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hexists(byte[], byte[])
 	 */
     @Override
     public Boolean hexists(byte[] key, byte[] field) {
@@ -1443,7 +1443,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hkeys(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hkeys(java.lang.String)
 	 */
     @Override
     public Set<String> hkeys(String key) {
@@ -1461,7 +1461,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hdel(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hdel(byte[], byte)
 	 */
     @Override
     public Long hdel(byte[] key, byte[]... fields) {
@@ -1479,7 +1479,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hvals(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hvals(java.lang.String)
 	 */
     @Override
     public List<String> hvals(String key) {
@@ -1497,7 +1497,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hlen(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hlen(byte[])
 	 */
     @Override
     public Long hlen(byte[] key) {
@@ -1515,7 +1515,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hgetAll(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hgetAll(java.lang.String)
 	 */
     @Override
     public Map<String, String> hgetAll(String key) {
@@ -1533,7 +1533,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hgetAll(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hgetAll(java.lang.String,
 	 * java.lang.Class)
 	 */
     @Override
@@ -1571,7 +1571,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hkeys(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hkeys(byte[])
 	 */
     @Override
     public Set<byte[]> hkeys(byte[] key) {
@@ -1589,7 +1589,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpush(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpush(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1608,7 +1608,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hvals(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hvals(byte[])
 	 */
     @Override
     public List<byte[]> hvals(byte[] key) {
@@ -1626,7 +1626,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lpush(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lpush(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -1645,7 +1645,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#hgetAll(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#hgetAll(byte[])
 	 */
     @Override
     public Map<byte[], byte[]> hgetAll(byte[] key) {
@@ -1663,7 +1663,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#llen(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#llen(java.lang.String)
 	 */
     @Override
     public Long llen(String key) {
@@ -1681,7 +1681,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrange(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrange(java.lang.String)
 	 */
     @Override
     public List<String> lrange(String key) {
@@ -1691,7 +1691,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrange(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrange(java.lang.String, long,
 	 * long)
 	 */
     @Override
@@ -1710,7 +1710,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrangeInteger(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrangeInteger(java.lang.String)
 	 */
     @Override
     public List<Integer> lrangeInteger(String key) {
@@ -1720,7 +1720,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrangeInteger(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrangeInteger(java.lang.String,
 	 * long, long)
 	 */
     @Override
@@ -1739,7 +1739,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrangeInteger(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrangeInteger(java.lang.String,
 	 * long)
 	 */
     @Override
@@ -1750,7 +1750,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#ltrim(java.lang.String, long, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#ltrim(java.lang.String, long, long)
 	 */
     @Override
     public String ltrim(String key, long start, long end) {
@@ -1768,7 +1768,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpush(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpush(byte[], byte)
 	 */
     @Override
     public Long rpush(byte[] key, byte[]... strings) {
@@ -1786,7 +1786,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lindex(java.lang.String, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lindex(java.lang.String, long)
 	 */
     @Override
     public String lindex(String key, long index) {
@@ -1804,7 +1804,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lpush(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lpush(byte[], byte)
 	 */
     @Override
     public Long lpush(byte[] key, byte[]... strings) {
@@ -1822,7 +1822,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lset(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lset(java.lang.String, long,
 	 * java.lang.String)
 	 */
     @Override
@@ -1841,7 +1841,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#llen(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#llen(byte[])
 	 */
     @Override
     public Long llen(byte[] key) {
@@ -1859,7 +1859,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrange(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrange(byte[], int, int)
 	 */
     @Override
     public List<byte[]> lrange(byte[] key, int start, int end) {
@@ -1877,7 +1877,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrem(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrem(java.lang.String, long,
 	 * java.lang.String)
 	 */
     @Override
@@ -1896,7 +1896,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#ltrim(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#ltrim(byte[], int, int)
 	 */
     @Override
     public String ltrim(byte[] key, int start, int end) {
@@ -1914,7 +1914,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lpop(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lpop(java.lang.String)
 	 */
     @Override
     public String lpop(String key) {
@@ -1943,7 +1943,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpop(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpop(java.lang.String)
 	 */
     @Override
     public String rpop(String key) {
@@ -1972,7 +1972,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lindex(byte[], int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lindex(byte[], int)
 	 */
     @Override
     public byte[] lindex(byte[] key, int index) {
@@ -1990,7 +1990,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpoplpush(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpoplpush(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2009,7 +2009,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lset(byte[], int, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lset(byte[], int, byte[])
 	 */
     @Override
     public String lset(byte[] key, int index, byte[] value) {
@@ -2027,7 +2027,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sadd(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sadd(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2046,7 +2046,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lrem(byte[], int, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lrem(byte[], int, byte[])
 	 */
     @Override
     public Long lrem(byte[] key, int count, byte[] value) {
@@ -2064,7 +2064,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#smembers(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#smembers(java.lang.String)
 	 */
     @Override
     public Set<String> smembers(String key) {
@@ -2082,7 +2082,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lpop(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lpop(byte[])
 	 */
     @Override
     public byte[] lpop(byte[] key) {
@@ -2100,7 +2100,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#srem(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#srem(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2119,7 +2119,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpop(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpop(byte[])
 	 */
     @Override
     public byte[] rpop(byte[] key) {
@@ -2137,7 +2137,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpoplpush(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpoplpush(byte[], byte[])
 	 */
     @Override
     public byte[] rpoplpush(byte[] srckey, byte[] dstkey) {
@@ -2155,7 +2155,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#spop(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#spop(java.lang.String)
 	 */
     @Override
     public String spop(String key) {
@@ -2173,7 +2173,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#smove(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#smove(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -2192,7 +2192,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sadd(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sadd(byte[], byte)
 	 */
     @Override
     public Long sadd(byte[] key, byte[]... members) {
@@ -2210,7 +2210,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#smembers(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#smembers(byte[])
 	 */
     @Override
     public Set<byte[]> smembers(byte[] key) {
@@ -2228,7 +2228,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scard(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scard(java.lang.String)
 	 */
     @Override
     public Long scard(String key) {
@@ -2246,7 +2246,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sismember(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sismember(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2265,7 +2265,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#srem(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#srem(byte[], byte)
 	 */
     @Override
     public Long srem(byte[] key, byte[]... member) {
@@ -2283,7 +2283,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sinter(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sinter(java.lang.String)
 	 */
     @Override
     public Set<String> sinter(String... keys) {
@@ -2301,7 +2301,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#spop(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#spop(byte[])
 	 */
     @Override
     public byte[] spop(byte[] key) {
@@ -2319,7 +2319,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#smove(byte[], byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#smove(byte[], byte[], byte[])
 	 */
     @Override
     public Long smove(byte[] srckey, byte[] dstkey, byte[] member) {
@@ -2337,7 +2337,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sinterstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sinterstore(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2356,7 +2356,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scard(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scard(byte[])
 	 */
     @Override
     public Long scard(byte[] key) {
@@ -2374,7 +2374,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sunion(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sunion(java.lang.String)
 	 */
     @Override
     public Set<String> sunion(String... keys) {
@@ -2391,7 +2391,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sismember(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sismember(byte[], byte[])
 	 */
     @Override
     public Boolean sismember(byte[] key, byte[] member) {
@@ -2409,7 +2409,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sunionstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sunionstore(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2428,7 +2428,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sinter(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sinter(byte)
 	 */
     @Override
     public Set<byte[]> sinter(byte[]... keys) {
@@ -2446,7 +2446,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sdiff(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sdiff(java.lang.String)
 	 */
     @Override
     public Set<String> sdiff(String... keys) {
@@ -2464,7 +2464,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sinterstore(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sinterstore(byte[], byte)
 	 */
     @Override
     public Long sinterstore(byte[] dstkey, byte[]... keys) {
@@ -2482,7 +2482,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sdiffstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sdiffstore(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2501,7 +2501,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sunion(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sunion(byte)
 	 */
     @Override
     public Set<byte[]> sunion(byte[]... keys) {
@@ -2519,7 +2519,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#srandmember(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#srandmember(java.lang.String)
 	 */
     @Override
     public String srandmember(String key) {
@@ -2537,7 +2537,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zadd(java.lang.String, double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zadd(java.lang.String, double,
 	 * java.lang.String)
 	 */
     @Override
@@ -2556,7 +2556,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sunionstore(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sunionstore(byte[], byte)
 	 */
     @Override
     public Long sunionstore(byte[] dstkey, byte[]... keys) {
@@ -2574,7 +2574,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zadd(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zadd(java.lang.String,
 	 * java.util.Map)
 	 */
     @Override
@@ -2593,7 +2593,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sdiff(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sdiff(byte)
 	 */
     @Override
     public Set<byte[]> sdiff(byte[]... keys) {
@@ -2611,7 +2611,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrange(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrange(java.lang.String, long,
 	 * long)
 	 */
     @Override
@@ -2630,7 +2630,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sdiffstore(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sdiffstore(byte[], byte)
 	 */
     @Override
     public Long sdiffstore(byte[] dstkey, byte[]... keys) {
@@ -2648,7 +2648,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#srandmember(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#srandmember(byte[])
 	 */
     @Override
     public byte[] srandmember(byte[] key) {
@@ -2666,7 +2666,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrem(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrem(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2685,7 +2685,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zadd(byte[], double, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zadd(byte[], double, byte[])
 	 */
     @Override
     public Long zadd(byte[] key, double score, byte[] member) {
@@ -2703,7 +2703,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zincrby(java.lang.String, double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zincrby(java.lang.String, double,
 	 * java.lang.String)
 	 */
     @Override
@@ -2722,7 +2722,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zadd(byte[], java.util.Map)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zadd(byte[], java.util.Map)
 	 */
     @Override
     public Long zadd(byte[] key, Map<byte[], Double> scoreMembers) {
@@ -2740,7 +2740,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrank(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrank(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2759,7 +2759,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrange(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrange(byte[], int, int)
 	 */
     @Override
     public Set<byte[]> zrange(byte[] key, int start, int end) {
@@ -2777,7 +2777,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrank(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrank(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2796,7 +2796,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrange(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrange(java.lang.String, long,
 	 * long)
 	 */
     @Override
@@ -2814,7 +2814,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrem(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrem(byte[], byte)
 	 */
     @Override
     public Long zrem(byte[] key, byte[]... members) {
@@ -2832,7 +2832,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zincrby(byte[], double, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zincrby(byte[], double, byte[])
 	 */
     @Override
     public Double zincrby(byte[] key, double score, byte[] member) {
@@ -2850,7 +2850,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeWithScores(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeWithScores(java.lang.String,
 	 * long, long)
 	 */
     @Override
@@ -2869,7 +2869,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrank(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrank(byte[], byte[])
 	 */
     @Override
     public Long zrank(byte[] key, byte[] member) {
@@ -2907,7 +2907,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrank(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrank(byte[], byte[])
 	 */
     @Override
     public Long zrevrank(byte[] key, byte[] member) {
@@ -2925,7 +2925,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zcard(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zcard(java.lang.String)
 	 */
     @Override
     public Long zcard(String key) {
@@ -2943,7 +2943,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrange(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrange(byte[], int, int)
 	 */
     @Override
     public Set<byte[]> zrevrange(byte[] key, int start, int end) {
@@ -2961,7 +2961,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zscore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zscore(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -2980,7 +2980,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeWithScores(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeWithScores(byte[], int, int)
 	 */
     @Override
     public Set<Tuple> zrangeWithScores(byte[] key, int start, int end) {
@@ -2998,7 +2998,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#watch(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#watch(java.lang.String)
 	 */
     @Override
     public String watch(String... keys) {
@@ -3016,7 +3016,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(java.lang.String)
 	 */
     @Override
     public List<String> sort(String key) {
@@ -3034,7 +3034,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeWithScores(byte[], int,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeWithScores(byte[], int,
 	 * int)
 	 */
     @Override
@@ -3053,7 +3053,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(java.lang.String,
 	 * redis.clients.jedis.SortingParams)
 	 */
     @Override
@@ -3072,7 +3072,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zcard(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zcard(byte[])
 	 */
     @Override
     public Long zcard(byte[] key) {
@@ -3090,7 +3090,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#blpop(int, java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#blpop(int, java.lang.String)
 	 */
     @Override
     public List<String> blpop(int timeout, String... keys) {
@@ -3108,7 +3108,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zscore(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zscore(byte[], byte[])
 	 */
     @Override
     public Double zscore(byte[] key, byte[] member) {
@@ -3146,7 +3146,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(java.lang.String,
 	 * redis.clients.jedis.SortingParams, java.lang.String)
 	 */
     @Override
@@ -3165,7 +3165,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -3184,7 +3184,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#brpop(int, java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#brpop(int, java.lang.String)
 	 */
     @Override
     public List<String> brpop(int timeout, String... keys) {
@@ -3202,7 +3202,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#watch(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#watch(byte)
 	 */
     @Override
     public String watch(byte[]... keys) {
@@ -3220,7 +3220,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#unwatch()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#unwatch()
 	 */
     @Override
     public String unwatch() {
@@ -3238,7 +3238,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#auth(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#auth(java.lang.String)
 	 */
     @Override
     public String auth(String password) {
@@ -3256,7 +3256,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(byte[])
 	 */
     @Override
     public List<byte[]> sort(byte[] key) {
@@ -3274,7 +3274,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(byte[],
 	 * redis.clients.jedis.SortingParams)
 	 */
     @Override
@@ -3293,7 +3293,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#blpop(int, byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#blpop(int, byte)
 	 */
     @Override
     public List<byte[]> blpop(int timeout, byte[]... keys) {
@@ -3311,7 +3311,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#publish(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#publish(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -3350,7 +3350,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zcount(java.lang.String, double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zcount(java.lang.String, double,
 	 * double)
 	 */
     @Override
@@ -3369,7 +3369,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(byte[],
 	 * redis.clients.jedis.SortingParams, byte[])
 	 */
     @Override
@@ -3388,7 +3388,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zcount(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zcount(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -3407,7 +3407,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#sort(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#sort(byte[], byte[])
 	 */
     @Override
     public Long sort(byte[] key, byte[] dstkey) {
@@ -3425,7 +3425,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(java.lang.String,
 	 * double, double)
 	 */
     @Override
@@ -3444,7 +3444,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#brpop(int, byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#brpop(int, byte)
 	 */
     @Override
     public List<byte[]> brpop(int timeout, byte[]... keys) {
@@ -3462,7 +3462,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -3481,7 +3481,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(java.lang.String,
 	 * double, double, int, int)
 	 */
     @Override
@@ -3500,7 +3500,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(java.lang.String,
 	 * java.lang.String, java.lang.String, int, int)
 	 */
     @Override
@@ -3529,6 +3529,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
         Jedis jedis = null;
         try {
             jedis = pool.getResource();
+
             return (List<T>) jedis.pipelined(jedisPipeline);
         } finally {
             if (jedis != null)
@@ -3619,7 +3620,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zcount(byte[], double, double)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zcount(byte[], double, double)
 	 */
     @Override
     public Long zcount(byte[] key, double min, double max) {
@@ -3637,7 +3638,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zcount(byte[], byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zcount(byte[], byte[], byte[])
 	 */
     @Override
     public Long zcount(byte[] key, byte[] min, byte[] max) {
@@ -3655,7 +3656,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(byte[], double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(byte[], double,
 	 * double)
 	 */
     @Override
@@ -3674,7 +3675,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(byte[], byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(byte[], byte[],
 	 * byte[])
 	 */
     @Override
@@ -3693,7 +3694,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(java.lang.String,
 	 * double, double)
 	 */
     @Override
@@ -3712,7 +3713,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(byte[], double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(byte[], double,
 	 * double, int, int)
 	 */
     @Override
@@ -3731,7 +3732,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -3750,7 +3751,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScore(byte[], byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScore(byte[], byte[],
 	 * byte[], int, int)
 	 */
     @Override
@@ -3769,7 +3770,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(java.lang.String,
 	 * double, double, int, int)
 	 */
     @Override
@@ -3788,7 +3789,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScoreWithScores(byte[],
 	 * double, double)
 	 */
     @Override
@@ -3827,7 +3828,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScoreWithScores(byte[],
 	 * byte[], byte[])
 	 */
     @Override
@@ -3866,7 +3867,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScoreWithScores(byte[],
 	 * double, double, int, int)
 	 */
     @Override
@@ -3885,7 +3886,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrangeByScoreWithScores(byte[],
 	 * byte[], byte[], int, int)
 	 */
     @Override
@@ -3924,7 +3925,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(java.lang.String,
 	 * java.lang.String, java.lang.String, int, int)
 	 */
     @Override
@@ -3963,7 +3964,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(byte[], double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(byte[], double,
 	 * double)
 	 */
     @Override
@@ -3982,7 +3983,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zremrangeByRank(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zremrangeByRank(java.lang.String,
 	 * long, long)
 	 */
     @Override
@@ -4001,7 +4002,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(byte[], byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(byte[], byte[],
 	 * byte[])
 	 */
     @Override
@@ -4020,7 +4021,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zremrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zremrangeByScore(java.lang.String,
 	 * double, double)
 	 */
     @Override
@@ -4039,7 +4040,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(byte[], double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(byte[], double,
 	 * double, int, int)
 	 */
     @Override
@@ -4058,7 +4059,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zremrangeByScore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zremrangeByScore(java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
     @Override
@@ -4077,7 +4078,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScore(byte[], byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScore(byte[], byte[],
 	 * byte[], int, int)
 	 */
     @Override
@@ -4096,7 +4097,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zunionstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zunionstore(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -4115,7 +4116,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScoreWithScores(byte[],
 	 * double, double)
 	 */
     @Override
@@ -4134,7 +4135,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zunionstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zunionstore(java.lang.String,
 	 * redis.clients.jedis.ZParams, java.lang.String)
 	 */
     @Override
@@ -4153,7 +4154,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScoreWithScores(byte[],
 	 * double, double, int, int)
 	 */
     @Override
@@ -4172,7 +4173,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zinterstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zinterstore(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -4191,7 +4192,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScoreWithScores(byte[],
 	 * byte[], byte[])
 	 */
     @Override
@@ -4210,7 +4211,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zinterstore(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zinterstore(java.lang.String,
 	 * redis.clients.jedis.ZParams, java.lang.String)
 	 */
     @Override
@@ -4229,7 +4230,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#strlen(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#strlen(java.lang.String)
 	 */
     @Override
     public Long strlen(String key) {
@@ -4247,7 +4248,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zrevrangeByScoreWithScores(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zrevrangeByScoreWithScores(byte[],
 	 * byte[], byte[], int, int)
 	 */
     @Override
@@ -4266,7 +4267,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lpushx(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lpushx(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -4285,7 +4286,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#persist(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#persist(java.lang.String)
 	 */
     @Override
     public Long persist(String key) {
@@ -4303,7 +4304,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zremrangeByRank(byte[], int, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zremrangeByRank(byte[], int, int)
 	 */
     @Override
     public Long zremrangeByRank(byte[] key, int start, int end) {
@@ -4321,7 +4322,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpushx(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpushx(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -4340,7 +4341,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zremrangeByScore(byte[], double,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zremrangeByScore(byte[], double,
 	 * double)
 	 */
     @Override
@@ -4359,7 +4360,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#echo(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#echo(java.lang.String)
 	 */
     @Override
     public String echo(String string) {
@@ -4377,7 +4378,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zremrangeByScore(byte[], byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zremrangeByScore(byte[], byte[],
 	 * byte[])
 	 */
     @Override
@@ -4396,7 +4397,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#linsert(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#linsert(java.lang.String,
 	 * redis.clients.jedis.BinaryClient.LIST_POSITION, java.lang.String,
 	 * java.lang.String)
 	 */
@@ -4416,7 +4417,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zunionstore(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zunionstore(byte[], byte)
 	 */
     @Override
     public Long zunionstore(byte[] dstkey, byte[]... sets) {
@@ -4434,7 +4435,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#brpoplpush(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#brpoplpush(java.lang.String,
 	 * java.lang.String, int)
 	 */
     @Override
@@ -4453,7 +4454,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zunionstore(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zunionstore(byte[],
 	 * redis.clients.jedis.ZParams, byte)
 	 */
     @Override
@@ -4472,7 +4473,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setbit(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setbit(java.lang.String, long,
 	 * boolean)
 	 */
     @Override
@@ -4491,7 +4492,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zinterstore(byte[], byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zinterstore(byte[], byte)
 	 */
     @Override
     public Long zinterstore(byte[] dstkey, byte[]... sets) {
@@ -4509,7 +4510,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getbit(java.lang.String, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getbit(java.lang.String, long)
 	 */
     @Override
     public Boolean getbit(String key, long offset) {
@@ -4527,7 +4528,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#zinterstore(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#zinterstore(byte[],
 	 * redis.clients.jedis.ZParams, byte)
 	 */
     @Override
@@ -4546,7 +4547,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setrange(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setrange(java.lang.String, long,
 	 * java.lang.String)
 	 */
     @Override
@@ -4565,7 +4566,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#save()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#save()
 	 */
     @Override
     public String save() {
@@ -4583,7 +4584,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getrange(java.lang.String, long,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getrange(java.lang.String, long,
 	 * long)
 	 */
     @Override
@@ -4602,7 +4603,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#bgsave()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#bgsave()
 	 */
     @Override
     public String bgsave() {
@@ -4620,7 +4621,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#configGet(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#configGet(java.lang.String)
 	 */
     @Override
     public List<String> configGet(String pattern) {
@@ -4638,7 +4639,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#bgrewriteaof()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#bgrewriteaof()
 	 */
     @Override
     public String bgrewriteaof() {
@@ -4656,7 +4657,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#configSet(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#configSet(java.lang.String,
 	 * java.lang.String)
 	 */
     @Override
@@ -4675,7 +4676,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lastsave()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lastsave()
 	 */
     @Override
     public Long lastsave() {
@@ -4693,7 +4694,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#shutdown()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#shutdown()
 	 */
     @Override
     public String shutdown() {
@@ -4711,7 +4712,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#eval(java.lang.String, int,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#eval(java.lang.String, int,
 	 * java.lang.String)
 	 */
     @Override
@@ -4730,7 +4731,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#info()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#info()
 	 */
     @Override
     public String info() {
@@ -4748,7 +4749,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slaveof(java.lang.String, int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slaveof(java.lang.String, int)
 	 */
     @Override
     public String slaveof(String host, int port) {
@@ -4766,7 +4767,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#eval(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#eval(java.lang.String,
 	 * java.util.List, java.util.List)
 	 */
     @Override
@@ -4785,7 +4786,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slaveofNoOne()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slaveofNoOne()
 	 */
     @Override
     public String slaveofNoOne() {
@@ -4803,7 +4804,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#eval(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#eval(java.lang.String)
 	 */
     @Override
     public Object eval(String script) {
@@ -4821,7 +4822,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#configGet(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#configGet(byte[])
 	 */
     @Override
     public List<byte[]> configGet(byte[] pattern) {
@@ -4839,7 +4840,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#evalsha(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#evalsha(java.lang.String)
 	 */
     @Override
     public Object evalsha(String script) {
@@ -4857,7 +4858,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#configResetStat()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#configResetStat()
 	 */
     @Override
     public String configResetStat() {
@@ -4875,7 +4876,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#configSet(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#configSet(byte[], byte[])
 	 */
     @Override
     public byte[] configSet(byte[] parameter, byte[] value) {
@@ -4893,7 +4894,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#isConnected()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#isConnected()
 	 */
     @Override
     public boolean isConnected() {
@@ -4911,7 +4912,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#strlen(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#strlen(byte[])
 	 */
     @Override
     public Long strlen(byte[] key) {
@@ -4929,7 +4930,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#evalsha(java.lang.String,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#evalsha(java.lang.String,
 	 * java.util.List, java.util.List)
 	 */
     @Override
@@ -4948,7 +4949,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#lpushx(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#lpushx(byte[], byte[])
 	 */
     @Override
     public Long lpushx(byte[] key, byte[] string) {
@@ -4966,7 +4967,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#evalsha(java.lang.String, int,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#evalsha(java.lang.String, int,
 	 * java.lang.String)
 	 */
     @Override
@@ -4985,7 +4986,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#persist(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#persist(byte[])
 	 */
     @Override
     public Long persist(byte[] key) {
@@ -5003,7 +5004,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#rpushx(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#rpushx(byte[], byte[])
 	 */
     @Override
     public Long rpushx(byte[] key, byte[] string) {
@@ -5021,7 +5022,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptExists(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptExists(java.lang.String)
 	 */
     @Override
     public Boolean scriptExists(String sha1) {
@@ -5039,7 +5040,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#echo(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#echo(byte[])
 	 */
     @Override
     public byte[] echo(byte[] string) {
@@ -5057,7 +5058,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptExists(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptExists(java.lang.String)
 	 */
     @Override
     public List<Boolean> scriptExists(String... sha1) {
@@ -5075,7 +5076,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#linsert(byte[],
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#linsert(byte[],
 	 * redis.clients.jedis.BinaryClient.LIST_POSITION, byte[], byte[])
 	 */
     @Override
@@ -5113,7 +5114,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptLoad(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptLoad(java.lang.String)
 	 */
     @Override
     public String scriptLoad(String script) {
@@ -5131,7 +5132,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getClient()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getClient()
 	 */
     @Override
     public Client getClient() {
@@ -5149,7 +5150,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slowlogGet()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slowlogGet()
 	 */
     @Override
     public List<Slowlog> slowlogGet() {
@@ -5167,7 +5168,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#brpoplpush(byte[], byte[], int)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#brpoplpush(byte[], byte[], int)
 	 */
     @Override
     public byte[] brpoplpush(byte[] source, byte[] destination, int timeout) {
@@ -5185,7 +5186,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slowlogGet(long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slowlogGet(long)
 	 */
     @Override
     public List<Slowlog> slowlogGet(long entries) {
@@ -5203,7 +5204,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#objectRefcount(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#objectRefcount(java.lang.String)
 	 */
     @Override
     public Long objectRefcount(String string) {
@@ -5221,7 +5222,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setbit(byte[], long, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setbit(byte[], long, byte[])
 	 */
     @Override
     public Boolean setbit(byte[] key, long offset, byte[] value) {
@@ -5239,7 +5240,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#objectEncoding(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#objectEncoding(java.lang.String)
 	 */
     @Override
     public String objectEncoding(String string) {
@@ -5257,7 +5258,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getbit(byte[], long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getbit(byte[], long)
 	 */
     @Override
     public Boolean getbit(byte[] key, long offset) {
@@ -5275,7 +5276,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#objectIdletime(java.lang.String)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#objectIdletime(java.lang.String)
 	 */
     @Override
     public Long objectIdletime(String string) {
@@ -5293,7 +5294,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#setrange(byte[], long, byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#setrange(byte[], long, byte[])
 	 */
     @Override
     public Long setrange(byte[] key, long offset, byte[] value) {
@@ -5311,7 +5312,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getrange(byte[], long, long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getrange(byte[], long, long)
 	 */
     @Override
     public byte[] getrange(byte[] key, long startOffset, long endOffset) {
@@ -5329,7 +5330,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#publish(byte[], byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#publish(byte[], byte[])
 	 */
     @Override
     public Long publish(byte[] channel, byte[] message) {
@@ -5347,7 +5348,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#psubscribe(redis.clients.jedis.
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#psubscribe(redis.clients.jedis.
 	 * BinaryJedisPubSub, byte)
 	 */
     @Override
@@ -5365,7 +5366,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#getDB()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#getDB()
 	 */
     @Override
     public Long getDB() {
@@ -5383,7 +5384,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#eval(byte[], java.util.List,
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#eval(byte[], java.util.List,
 	 * java.util.List)
 	 */
     @Override
@@ -5402,7 +5403,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#eval(byte[], byte[], byte[][])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#eval(byte[], byte[], byte[][])
 	 */
     @Override
     public Object eval(byte[] script, byte[] keyCount, byte[][] params) {
@@ -5420,7 +5421,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptFlush()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptFlush()
 	 */
     @Override
     public String scriptFlush() {
@@ -5438,7 +5439,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptExists(byte)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptExists(byte)
 	 */
     @Override
     public List<Long> scriptExists(byte[]... sha1) {
@@ -5456,7 +5457,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptLoad(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptLoad(byte[])
 	 */
     @Override
     public byte[] scriptLoad(byte[] script) {
@@ -5474,7 +5475,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#scriptKill()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#scriptKill()
 	 */
     @Override
     public String scriptKill() {
@@ -5492,7 +5493,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slowlogReset()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slowlogReset()
 	 */
     @Override
     public String slowlogReset() {
@@ -5510,7 +5511,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slowlogLen()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slowlogLen()
 	 */
     @Override
     public long slowlogLen() {
@@ -5528,7 +5529,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slowlogGetBinary()
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slowlogGetBinary()
 	 */
     @Override
     public List<byte[]> slowlogGetBinary() {
@@ -5546,7 +5547,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#slowlogGetBinary(long)
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#slowlogGetBinary(long)
 	 */
     @Override
     public List<byte[]> slowlogGetBinary(long entries) {
@@ -5564,7 +5565,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#objectRefcount(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#objectRefcount(byte[])
 	 */
     @Override
     public Long objectRefcount(byte[] key) {
@@ -5582,7 +5583,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#objectEncoding(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#objectEncoding(byte[])
 	 */
     @Override
     public byte[] objectEncoding(byte[] key) {
@@ -5599,7 +5600,7 @@ public class RedisPersistentCacheImpl implements PersistentCache {
     /*
 	 * (non-Javadoc)
 	 *
-	 * @see com.yumo.core.cache.redis.IRedis#objectIdletime(byte[])
+	 * com.mobike.iotcloud.backend.framework.cache.PersistentCache#objectIdletime(byte[])
 	 */
     @Override
     public Long objectIdletime(byte[] key) {
