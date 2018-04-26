@@ -3,11 +3,9 @@ package com.mobike.iotcloud.backend.framework.interceptor;
 import com.mobike.iotcloud.backend.framework.controller.bean.AppUserAgent;
 import com.mobike.iotcloud.backend.framework.controller.bean.RestResponse;
 import com.mobike.iotcloud.backend.framework.controller.bean.SignValidator;
-import com.mobike.iotcloud.backend.framework.controller.bean.TicketBuilder;
 import com.mobike.iotcloud.backend.framework.util.JsonUtil;
 import com.mobike.iotcloud.backend.framework.util.ThreadLocalContext;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,7 +17,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 public class OpenApiInterceptor implements HandlerInterceptor {
-
 
 
     @Override
