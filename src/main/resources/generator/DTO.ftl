@@ -5,7 +5,7 @@ public class ${table.className} extends Abstract${table.className}
 {
 	private static final long serialVersionUID = 1L;
 
-	public ${table.name}()
+	public ${table.className}()
 	{
 		super();
 	}
