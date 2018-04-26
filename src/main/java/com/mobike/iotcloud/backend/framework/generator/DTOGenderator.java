@@ -95,11 +95,11 @@ public class DTOGenderator {
         cfg.getTemplate(HBM_TEMPLATE).process(datas, fw);
         IOUtils.closeQuietly(fw);
 
-        fw = new FileWriter(new File(classDir, table.getName() + ".java"));
+        fw = new FileWriter(new File(classDir, table.getClassName() + ".java"));
         cfg.getTemplate(DTO_TEMPLATE).process(datas, fw);
         IOUtils.closeQuietly(fw);
 
-        fw = new FileWriter(new File(classDir, "Abstract" + table.getName() + ".java"));
+        fw = new FileWriter(new File(classDir, "Abstract" + table.getClassName() + ".java"));
         cfg.getTemplate(ABSTRACT_DTO_TEMPLATE).process(datas, fw);
         IOUtils.closeQuietly(fw);
 

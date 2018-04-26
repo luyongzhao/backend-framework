@@ -28,8 +28,6 @@ public class OpenApiInterceptor implements HandlerInterceptor {
         log.debug("open api interceptor is calling...");
 
 
-
-
         final StringBuilder errMsg = new StringBuilder();
 
         //验证是否为合法的请求
@@ -49,8 +47,11 @@ public class OpenApiInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
 
-        //出去的请求header中需要添加accountId和ticket
         log.debug("post handle is running...");
+
+
+        log.debug("clear thread local...");
+        ThreadLocalContext.clean();
 
     }
 

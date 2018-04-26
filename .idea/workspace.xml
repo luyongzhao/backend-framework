@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5f5f4df-d36b-4596-ad07-238035ff1b79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDQueueGeneratorAutoConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/GenericsUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDGeneratorAutoConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDIncreaseGeneratorAutoConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/iotcloud-backend-framework-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/iotcloud-backend-framework-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheAutoConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheAutoConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/PersistentCache.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/PersistentCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,45 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedisPersistentCacheImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl.java">
+      <file leaf-file-name="DTOGenderator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="3532" column="30" lean-forward="false" selection-start-line="3532" selection-start-column="30" selection-end-line="3532" selection-end-column="30" />
-              <folding>
-                <element signature="e#2879#2880#0" expanded="true" />
-                <element signature="e#2951#2952#0" expanded="true" />
-                <element signature="e#4345#4346#0" expanded="true" />
-                <element signature="e#4403#4404#0" expanded="true" />
-                <element signature="e#17108#17117#0" expanded="true" />
-                <element signature="e#36929#37126#0" expanded="true" />
-                <element signature="e#37125#37126#0" expanded="true" />
-                <element signature="e#37175#37191#0" expanded="true" />
-                <element signature="e#40103#40104#0" expanded="true" />
-                <element signature="e#40149#40150#0" expanded="true" />
-                <element signature="e#40812#40813#0" expanded="true" />
-                <element signature="e#40865#40866#0" expanded="true" />
-                <element signature="e#41255#41264#0" expanded="true" />
-                <element signature="e#41677#41678#0" expanded="true" />
-                <element signature="e#41734#41735#0" expanded="true" />
-                <element signature="e#46192#46392#0" expanded="true" />
-                <element signature="e#46391#46392#0" expanded="true" />
-                <element signature="e#46899#47099#0" expanded="true" />
-                <element signature="e#47098#47099#0" expanded="true" />
-                <marker date="1524714022000" expanded="false" signature="137148:137159" ph=" { " />
-                <marker date="1524714022000" expanded="false" signature="137171:137177" ph=" }" />
-                <marker date="1524714022000" expanded="false" signature="137220:137231" ph=" { " />
-                <marker date="1524714022000" expanded="false" signature="137248:137254" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PipelineBlock.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/PipelineBlock.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="540">
+              <caret line="101" column="78" lean-forward="false" selection-start-line="101" selection-start-column="78" selection-end-line="101" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -128,32 +83,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistentCacheAutoConfiguration.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PersistentCacheAutoConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state relative-caret-position="180">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PipelineBase.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/PipelineBase.class">
+      <file leaf-file-name="OpenApiInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="129" column="27" lean-forward="false" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
+            <state relative-caret-position="120">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistentCache.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/cache/PersistentCache.java">
+      <file leaf-file-name="WebAppConfigurer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="51" />
+            <state relative-caret-position="105">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreadLocalContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ThreadLocalContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+              <folding>
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/IDGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDIncrementGenerator.java" />
@@ -216,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/SignBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/AppUserAgent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/TicketBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/SignValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/Configs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/abstractdto.ftl" />
@@ -232,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/Table.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generator/HBM.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/RedisIDQueueFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/UUID.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/NumberX.java" />
@@ -253,6 +218,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDQueueGeneratorAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/RedisIDIncreaseGeneratorAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java" />
       </list>
     </option>
   </component>
@@ -362,7 +330,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
@@ -371,17 +339,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
@@ -582,7 +540,7 @@
       <updated>1523954703772</updated>
       <workItem from="1523954707797" duration="49795000" />
       <workItem from="1524484203046" duration="21407000" />
-      <workItem from="1524571957883" duration="32616000" />
+      <workItem from="1524571957883" duration="33707000" />
     </task>
     <task id="LOCAL-00001" summary="调整说明">
       <created>1524018647197</created>
@@ -654,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524654157669</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修复持久缓存自动加载的问题">
+      <created>1524732719150</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1524732719150</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103818000" />
+    <option name="totallyTimeSpent" value="104909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,7 +651,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25383827" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23504274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17582418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33572158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -720,7 +685,8 @@
     <MESSAGE value="增加依赖jar" />
     <MESSAGE value="完成api接口的代码生成功能" />
     <MESSAGE value="增加给予redis的自增ID生成和队列ID生成功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加给予redis的自增ID生成和队列ID生成功能" />
+    <MESSAGE value="修复持久缓存自动加载的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复持久缓存自动加载的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -729,30 +695,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8475">
-          <caret line="638" column="29" lean-forward="false" selection-start-line="638" selection-start-column="29" selection-end-line="638" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/AbstractDto.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/DTO.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/Column.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -855,14 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1174,8 +1108,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state relative-caret-position="180">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ThreadLocalContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/generator/DTOGenderator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="101" column="78" lean-forward="false" selection-start-line="101" selection-start-column="78" selection-end-line="101" selection-end-column="78" />
           <folding />
         </state>
       </provider>

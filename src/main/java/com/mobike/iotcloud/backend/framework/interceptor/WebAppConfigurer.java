@@ -12,7 +12,7 @@ public class WebAppConfigurer extends WebMvcConfigurerAdapter {
 
 
         //添加拦截器
-        registry.addInterceptor(new OpenApiInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(new OpenApiInterceptor()).addPathPatterns("/**").excludePathPatterns("");
 
         super.addInterceptors(registry);
     }
