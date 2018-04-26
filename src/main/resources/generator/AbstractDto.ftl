@@ -10,7 +10,7 @@ import org.hibernate.validator.constraints.*;
 
 @Data
 @ApiModel(description = "")
-public class Abstract${table.name} implements DtoSupport
+public class Abstract${table.className} implements DtoSupport
 {
 	private static final long serialVersionUID = 1L;
 <#list table.columns as col>

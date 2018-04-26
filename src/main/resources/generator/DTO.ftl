@@ -1,7 +1,7 @@
 package ${pkgName};
 
 
-public class ${table.name} extends Abstract${table.name}
+public class ${table.className} extends Abstract${table.className}
 {
 	private static final long serialVersionUID = 1L;
 
