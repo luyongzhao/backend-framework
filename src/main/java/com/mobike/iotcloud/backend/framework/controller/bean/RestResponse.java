@@ -154,8 +154,5 @@ public class RestResponse implements Serializable {
         this.data = data;
     }
 
-    public boolean success() {
-        return this.code == RESULT_CODE.success;
-    }
 
 }
