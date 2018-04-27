@@ -20,10 +20,10 @@ import java.util.TreeMap;
 public class SignValidator {
 
     private static final String decode = "utf-8";
-    //应用id，对于摩拜来讲就是账户id
-    private String appID = null;
 
-    public static final String ATTR_APP_ID = "mobike-account-id";
+    public static final String ATTR_ACCOUNT_ID = "mobike-account-id";
+
+    public static final String ATTR_PRODUCT_ID = "mobike-production-id";
 
     public static final String ATTR_SIGN = "mobike-sign";
 
@@ -65,16 +65,25 @@ public class SignValidator {
 
 
         //进入的请求需要验证accountId和ticket
-        String appId = req.getHeader(ATTR_APP_ID);
+        String productId = req.getHeader(ATTR_PRODUCT_ID);
         String sign = req.getHeader(ATTR_SIGN);
+        String accountId = req.getHeader(ATTR_ACCOUNT_ID);
         String timestamp = req.getHeader(ATTR_TIMESTAMP);
 
 
         String err = null;
 
-        if (StringUtils.isBlank(appId)) {
+        if (StringUtils.isBlank(accountId)) {
 
-            err = ATTR_APP_ID + " is blank in header!";
+            err = ATTR_ACCOUNT_ID + " is blank in header!";
+            log.warn(err);
+            errorMsg.append(err);
+            return null;
+        }
+
+        if (StringUtils.isBlank(productId)) {
+
+            err = ATTR_PRODUCT_ID + " is blank in header!";
             log.warn(err);
             errorMsg.append(err);
             return null;
@@ -125,8 +134,9 @@ public class SignValidator {
         }
 
         AppUserAgent appUserAgent = new AppUserAgent();
-        appUserAgent.setAccountId(appId);
+        appUserAgent.setAccountId(productId);
         appUserAgent.setTimestamp(timestampL);
+        appUserAgent.setProductId(accountId);
 
         //加入threadlocal，便于后续执行方法中获取上下文信息，特别是accountId
         ThreadLocalContext.put(AppUserAgent.class, appUserAgent);

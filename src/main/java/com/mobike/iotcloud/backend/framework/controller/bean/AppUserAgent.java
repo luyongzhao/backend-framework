@@ -9,6 +9,9 @@ public class AppUserAgent {
     //账户id
     private String accountId;
 
+    //产品Id
+    private String productId;
+
     //请求时间戳
     private long timestamp;
 
