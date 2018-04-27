@@ -23,7 +23,7 @@ public class SignValidator {
 
     public static final String ATTR_ACCOUNT_ID = "mobike-account-id";
 
-    public static final String ATTR_PRODUCT_ID = "mobike-production-id";
+    public static final String ATTR_PRODUCT_ID = "mobike-product-id";
 
     public static final String ATTR_SIGN = "mobike-sign";
 
@@ -134,9 +134,9 @@ public class SignValidator {
         }
 
         AppUserAgent appUserAgent = new AppUserAgent();
-        appUserAgent.setAccountId(productId);
+        appUserAgent.setAccountId(accountId);
         appUserAgent.setTimestamp(timestampL);
-        appUserAgent.setProductId(accountId);
+        appUserAgent.setProductId(productId);
 
         //加入threadlocal，便于后续执行方法中获取上下文信息，特别是accountId
         ThreadLocalContext.put(AppUserAgent.class, appUserAgent);
