@@ -31,7 +31,6 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/BeanPropCopyUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/dao/dto/DtoIdxSupport.java
-/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/http/client/LocalHttpClient.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestPageLimit.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl.java

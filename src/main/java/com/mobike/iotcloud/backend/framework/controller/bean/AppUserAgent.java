@@ -15,13 +15,35 @@ public class AppUserAgent {
     //请求时间戳
     private long timestamp;
 
-    //随机字符串
-    private String randomStr;
+    //签名
+    private String sign;
 
 
     public static AppUserAgent current()
     {
         return ThreadLocalContext.get(AppUserAgent.class);
+    }
+
+
+    /**
+     * 用户需要实现该接口，自定义header中字段名称
+     */
+    public static interface FieldName{
+
+
+        String getAccountIdName();
+
+        String getProductIdName();
+
+        String getTimestampName();
+
+        String getSignName();
+
+        /**
+         * 所有名称开头公共的字符串，
+         * @return
+         */
+        String getNameStartWith();
     }
 
 

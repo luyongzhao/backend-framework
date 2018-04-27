@@ -13,8 +13,9 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistration
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@Configuration
-@EnableConfigurationProperties(InterceptorProperties.class)
+@Deprecated
+//@Configuration
+//@EnableConfigurationProperties(InterceptorProperties.class)
 @Slf4j
 public class WebAppConfigurer extends WebMvcConfigurerAdapter {
 

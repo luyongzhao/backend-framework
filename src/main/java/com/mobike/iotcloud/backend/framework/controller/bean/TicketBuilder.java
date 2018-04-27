@@ -165,13 +165,14 @@ public class TicketBuilder {
         }
 
         //随机数不能为空
+        /**
         if (StringUtils.isBlank(appUserAgent.getRandomStr())) {
 
             err = "random string can not be empty!";
             log.warn(err);
             errorMsg.append(err);
             return null;
-        }
+        }*/
 
         //验证请求是否失效
         long now = System.currentTimeMillis();

@@ -75,7 +75,6 @@ com/mobike/iotcloud/backend/framework/util/URLUtil.class
 com/mobike/iotcloud/backend/framework/util/SnowflakeIdWorker.class
 com/mobike/iotcloud/backend/framework/cache/impl/LocalMemoryCacheImpl.class
 com/mobike/iotcloud/backend/framework/util/StringEscape.class
-com/mobike/iotcloud/backend/framework/interceptor/OpenApiInterceptor.class
 com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl$1.class
 com/mobike/iotcloud/backend/framework/util/ClassUtil.class
@@ -84,6 +83,7 @@ com/mobike/iotcloud/backend/framework/dao/impl/BasicDaoImpl$3.class
 com/mobike/iotcloud/backend/framework/http/client/LocalResponseHandler.class
 com/mobike/iotcloud/backend/framework/util/ZIP.class
 com/mobike/iotcloud/backend/framework/http/client/ResultErrorHandler.class
+com/mobike/iotcloud/backend/framework/controller/bean/AppUserAgent$FieldName.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisExpiredMemoryCacheImpl.class
 com/mobike/iotcloud/backend/framework/util/BeanContextUtil.class
 com/mobike/iotcloud/backend/framework/util/ThreadLocalContext.class

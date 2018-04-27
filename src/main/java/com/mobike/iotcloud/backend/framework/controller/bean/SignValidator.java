@@ -21,18 +21,6 @@ public class SignValidator {
 
     private static final String decode = "utf-8";
 
-    public static final String ATTR_ACCOUNT_ID = "mobike-account-id";
-
-    public static final String ATTR_PRODUCT_ID = "mobike-product-id";
-
-    public static final String ATTR_SIGN = "mobike-sign";
-
-    public static final String ATTR_TIMESTAMP = "mobike-timestamp";
-
-    public static final String HEAD_ATTR = "mobike-";
-
-    public static final String secret = "adkjffdkajkjkjnm";
-
 
     private static final int expiredSeconds = 30;
 
@@ -55,63 +43,53 @@ public class SignValidator {
 
 
     /**
-     * 验证是否为合法的请求
+     *
      *
      * @param req
-     * @param errorMsg 输出参数：解析过程中出现的错误信息
+     * @param fieldName header中参数名称，需要实现AppUserAgent.FieldName，自定义header中字段名称
      * @return 不合法请求返回null
      */
-    public AppUserAgent validate(HttpServletRequest req, final StringBuilder errorMsg) {
+    public AppUserAgent validate(HttpServletRequest req, AppUserAgent.FieldName fieldName, String accountSecret) throws Exception{
 
 
         //进入的请求需要验证accountId和ticket
-        String productId = req.getHeader(ATTR_PRODUCT_ID);
-        String sign = req.getHeader(ATTR_SIGN);
-        String accountId = req.getHeader(ATTR_ACCOUNT_ID);
-        String timestamp = req.getHeader(ATTR_TIMESTAMP);
+        String productId = req.getHeader(fieldName.getProductIdName());
+        String sign = req.getHeader(fieldName.getSignName());
+        String accountId = req.getHeader(fieldName.getAccountIdName());
+        String timestamp = req.getHeader(fieldName.getTimestampName());
 
 
         String err = null;
 
         if (StringUtils.isBlank(accountId)) {
 
-            err = ATTR_ACCOUNT_ID + " is blank in header!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            err = fieldName.getAccountIdName() + " is blank in header!";
+            throw new Exception(err);
         }
 
         if (StringUtils.isBlank(productId)) {
 
-            err = ATTR_PRODUCT_ID + " is blank in header!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            err = fieldName.getProductIdName() + " is blank in header!";
+            throw new Exception(err);
         }
 
         if (StringUtils.isBlank(sign)) {
 
-            err = ATTR_SIGN + " is blank in header!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            err = fieldName.getSignName() + " is blank in header!";
+            throw new Exception(err);
         }
 
         if (StringUtils.isBlank(timestamp)) {
 
-            err = ATTR_TIMESTAMP + " is blank in header!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            err = fieldName.getTimestampName() + " is blank in header!";
+            throw new Exception(err);
         }
 
         long timestampL = NumberUtils.toLong(timestamp, -1);
         if (timestampL == -1) {
 
-            err = ATTR_TIMESTAMP + " is not a valid number!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            err = fieldName.getTimestampName() + " is not a valid number!";
+            throw new Exception(err);
         }
 
         //验证请求是否失效
@@ -119,18 +97,14 @@ public class SignValidator {
         if ((now - timestampL) / 1000 > expiredSeconds) {
 
             err = "request is expired!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            throw new Exception(err);
         }
 
         //对数据进行签名，验证是否跟用户上传的一致
-        boolean flag = validateSign(req, sign);
+        boolean flag = validateSign(req, fieldName, sign, accountSecret);
         if (!flag) {
-            err = ATTR_SIGN + " is invalid!";
-            log.warn(err);
-            errorMsg.append(err);
-            return null;
+            err = fieldName.getSignName() + " is invalid!";
+            throw new Exception(err);
         }
 
         AppUserAgent appUserAgent = new AppUserAgent();
@@ -139,13 +113,13 @@ public class SignValidator {
         appUserAgent.setProductId(productId);
 
         //加入threadlocal，便于后续执行方法中获取上下文信息，特别是accountId
-        ThreadLocalContext.put(AppUserAgent.class, appUserAgent);
+        //ThreadLocalContext.put(AppUserAgent.class, appUserAgent);
 
         return appUserAgent;
 
     }
 
-    private boolean validateSign(HttpServletRequest req, String sign) {
+    private boolean validateSign(HttpServletRequest req, AppUserAgent.FieldName fieldName, String sign, String accountSecret) {
 
         //对参数排序
         Map<String, String> sortMap = new TreeMap<>();
@@ -157,7 +131,8 @@ public class SignValidator {
             String headerName = enumeraton.nextElement();
 
 
-            if (headerName.startsWith(HEAD_ATTR)) {
+            if (headerName.startsWith(fieldName.getNameStartWith())) {
+
                 sortMap.put(headerName, req.getHeader(headerName));
             }
         }
@@ -211,7 +186,7 @@ public class SignValidator {
 
 
         //删除签名关键字
-        sortMap.remove(ATTR_SIGN);
+        sortMap.remove(fieldName.getSignName());
 
         //按顺序拼接参数
         StringBuilder builder = new StringBuilder();
@@ -225,7 +200,7 @@ public class SignValidator {
         log.debug("strToSign:{}",strToSign);
 
         //签名
-        String newSign = Signer.getSigner(Signer.HMAC_SHA1).signString(strToSign, secret);
+        String newSign = Signer.getSigner(Signer.HMAC_SHA1).signString(strToSign, accountSecret);
         log.debug("compare sign,old sign:{},new sign:{}",sign,newSign);
 
         return newSign.equals(sign);
