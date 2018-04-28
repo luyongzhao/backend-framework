@@ -32,7 +32,7 @@ public class JavaBeanSerializerUtil
 
 	public static String object2Json(Object bean)
 	{
-		return JsonUtil.toJsonString(bean);
+		return JsonUtil.toJSONString(bean);
 	}
 
 	public static Map<String, String> describe(Object bean)
