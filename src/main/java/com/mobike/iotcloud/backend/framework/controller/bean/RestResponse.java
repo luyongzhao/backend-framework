@@ -107,9 +107,9 @@ public class RestResponse implements Serializable {
         if (log.isDebugEnabled()) {
             AppUserAgent agent = AppUserAgent.current();
             if (agent != null) {
-                log.debug(JsonUtil.toJsonString(new MapBean("apiUserAgent", agent, "restResponse", rest)));
+                log.debug(JsonUtil.toJSONString(new MapBean("apiUserAgent", agent, "restResponse", rest)));
             } else {
-                log.debug(JsonUtil.toJsonString(rest));
+                log.debug(JsonUtil.toJSONString(rest));
             }
         }
     }

@@ -52,7 +52,7 @@ public abstract class ResultErrorHandler {
 							uriId,
 							request.getURI(),
 							content == null ? "multipart_form_data" : content,
-							result == null? null : JsonUtil.toJsonString(result));
+							result == null? null : JsonUtil.toJSONString(result));
 				}
 			}
 			this.handle(uriId,request.getURI().toString(),content,result);

@@ -11,8 +11,6 @@ import org.springframework.stereotype.Service;
 import redis.clients.jedis.PipelineBlock;
 import redis.clients.jedis.Response;
 
-import java.beans.PersistenceDelegate;
-import java.lang.reflect.ParameterizedType;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
@@ -104,7 +102,7 @@ public class RedisExpiredMemoryCacheImpl<K,V> implements MemoryCache<K,V> {
     @Override
     public void put(K key, V val) {
 
-        persistentCache.setex(key.toString(),expiredAfterSeconds,JsonUtil.toJsonString(val));
+        persistentCache.setex(key.toString(),expiredAfterSeconds,JsonUtil.toJSONString(val));
 
     }
 
