@@ -29,7 +29,7 @@ public abstract class ResultErrorHandler {
 
 		RestResponse baseResult = (RestResponse)result;
 
-		return !baseResult.isSuccess();
+		return !baseResult.success();
 
 	}
 	
