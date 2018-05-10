@@ -125,7 +125,7 @@ public class RestResponse implements Serializable {
         return rest;
     }
 
-    public boolean isSuccess(){
+    public boolean success(){
 
         return code == RESULT_CODE.success;
     }

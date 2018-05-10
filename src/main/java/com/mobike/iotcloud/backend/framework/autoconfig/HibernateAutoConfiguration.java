@@ -1,11 +1,10 @@
 package com.mobike.iotcloud.backend.framework.autoconfig;
 
 
-import com.mobike.iotcloud.backend.framework.dao.BasicDao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -24,7 +23,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @EnableConfigurationProperties(HibernateProperties.class)
-@ConditionalOnClass(BasicDao.class) //当类路径存在这个类时才会加载这个配置类，否则跳过,这个很有用比如不同jar包间类依赖，依赖的类不存在直接跳过，不会报错
+@ConditionalOnProperty("hibernate.dialect")
 public class HibernateAutoConfiguration {
 
     @Autowired

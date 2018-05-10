@@ -112,8 +112,6 @@ public class SignValidator {
         appUserAgent.setTimestamp(timestampL);
         appUserAgent.setProductId(productId);
 
-        //加入threadlocal，便于后续执行方法中获取上下文信息，特别是accountId
-        //ThreadLocalContext.put(AppUserAgent.class, appUserAgent);
 
         return appUserAgent;
 

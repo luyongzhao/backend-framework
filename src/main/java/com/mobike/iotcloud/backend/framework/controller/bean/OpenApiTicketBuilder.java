@@ -21,9 +21,9 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Slf4j
 @Deprecated
-public class TicketBuilder {
+public class OpenApiTicketBuilder {
 
-    private static final Map<String, TicketBuilder> appID2TicketBuilder = new ConcurrentHashMap<String,TicketBuilder>();
+    private static final Map<String, OpenApiTicketBuilder> appID2TicketBuilder = new ConcurrentHashMap<String,OpenApiTicketBuilder>();
 
     private AES128Factory aes128Factory = null;
 
@@ -39,26 +39,26 @@ public class TicketBuilder {
     private static final int expiredSeconds = 30;
 
 
-    private TicketBuilder() {
+    private OpenApiTicketBuilder() {
 
     }
 
     //TODO:初始化，后续需要从数据库或者下层接口获取
     static{
-        TicketBuilder mobikeBuilder = new TicketBuilder("mobike");
+        OpenApiTicketBuilder mobikeBuilder = new OpenApiTicketBuilder("mobike");
         appID2TicketBuilder.put("mobike",mobikeBuilder);
     }
 
-    private TicketBuilder(String appID) {
+    private OpenApiTicketBuilder(String appID) {
 
         this.appID = appID;
         //TODO:此处需要获取应用的密钥密钥必须要16个字符
         aes128Factory = new AES128Factory("adkjffdkajkjkjnm");
     }
 
-    public static synchronized TicketBuilder getInstance(String appID) {
+    public static synchronized OpenApiTicketBuilder getInstance(String appID) {
 
-        TicketBuilder builder = appID2TicketBuilder.get(appID);
+        OpenApiTicketBuilder builder = appID2TicketBuilder.get(appID);
         if (builder == null) {
             return null;
         }
@@ -123,8 +123,8 @@ public class TicketBuilder {
     public AppUserAgent parse(HttpServletRequest req, final StringBuilder errorMsg) {
 
         //进入的请求需要验证accountId和ticket
-        String appId = req.getHeader(TicketBuilder.ATTR_APP_ID);
-        String ticket = req.getHeader(TicketBuilder.ATTR_TICKET);
+        String appId = req.getHeader(OpenApiTicketBuilder.ATTR_APP_ID);
+        String ticket = req.getHeader(OpenApiTicketBuilder.ATTR_TICKET);
 
 
         String err = null;
@@ -203,8 +203,8 @@ public class TicketBuilder {
 //			System.out.println(newcode);
 //		}
         String data = "{\"os\":2,\"version\":\"1.0\",\"deviceToken\":\"\",\"screenWidth\":640,\"screenHeight\":960,\"uuid\":1111,\"device\":\"ipad\",\"pkgID\":\"xschool\",\"lang\":\"ch\",\"userID\":\"1\",\"ip\":\"192.168.1.1\",\"uri\":\"http://m.xschool.com/tp/student/sendRegSms\",\"requestType\":1}";
-        String encodeData = TicketBuilder.getInstance("mobike").encode(data);
+        String encodeData = OpenApiTicketBuilder.getInstance("mobike").encode(data);
         System.out.println(encodeData);
-        System.out.println(TicketBuilder.getInstance("mobike").decode(encodeData));
+        System.out.println(OpenApiTicketBuilder.getInstance("mobike").decode(encodeData));
     }
 }

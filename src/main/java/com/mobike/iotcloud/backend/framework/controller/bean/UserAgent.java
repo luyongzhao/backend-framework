@@ -1,5 +1,6 @@
-package com.mobike.iotcloud.backend.framework.util;
+package com.mobike.iotcloud.backend.framework.controller.bean;
 
+import com.mobike.iotcloud.backend.framework.util.ThreadLocalContext;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 
