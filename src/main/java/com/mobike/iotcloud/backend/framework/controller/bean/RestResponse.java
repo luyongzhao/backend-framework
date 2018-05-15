@@ -12,7 +12,9 @@ import java.io.Serializable;
  * @author luyongzhao
  */
 public class RestResponse implements Serializable {
+
     private static final long serialVersionUID = 1L;
+
     private static Log log = LogFactory.getLog(RestResponse.class);
 
     public static final RestResponse success = new RestResponse();
@@ -34,15 +36,12 @@ public class RestResponse implements Serializable {
     public static final RestResponse expiredRequest = RestResponse.error(RESULT_CODE.expiredRequest, "expired request!");
 
 
-
-
     /**
      * 成功
      */
     private Integer code;
     private String desc;
     private Object data;
-
 
 
     public static class RESULT_CODE {
@@ -125,7 +124,7 @@ public class RestResponse implements Serializable {
         return rest;
     }
 
-    public boolean success(){
+    public boolean success() {
 
         return code == RESULT_CODE.success;
     }

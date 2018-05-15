@@ -31,7 +31,7 @@ interceptor:
     list:  
         -className:com.mobike.iotcloud.guard.api.interceptor.InternalInterceptor  
         include:/iotcloud/guard/internal/*  
-        exclude:  
+        exclude: （没有可以不填写）
         -className:com.mobike.iotcloud.backend.framework.interceptor.OpenApiInterceptor  
         include:/iotcloud/guard/**  
         exclude:/iotcloud/guard/internal/*  
