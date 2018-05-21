@@ -74,6 +74,7 @@ com/mobike/iotcloud/backend/framework/validate/PhoneValidator.class
 com/mobike/iotcloud/backend/framework/util/OSUtil.class
 weixin/popular/bean/selfmenu/CurrentSelfmenuInfo.class
 com/mobike/iotcloud/backend/framework/autoconfig/HibernateAutoConfiguration.class
+weixin/popular/smallAppApi/SmallAppBaseAPI.class
 com/mobike/iotcloud/backend/framework/util/ExcelExportUtil.class
 weixin/popular/bean/message/ImageMessage.class
 weixin/popular/bean/paymch/Report.class
@@ -122,6 +123,7 @@ com/mobike/iotcloud/backend/framework/autoconfig/InterceptorProperties.class
 com/mobike/iotcloud/backend/framework/service/ServiceSupport.class
 com/mobike/iotcloud/backend/framework/util/NumberX.class
 weixin/popular/bean/paymch/RefundqueryResult.class
+com/mobike/iotcloud/backend/framework/controller/BasicValidateController$PagingParam.class
 weixin/popular/util/PayUtil.class
 weixin/popular/bean/massmessage/MassTextMessage.class
 weixin/popular/bean/component/FuncInfo.class
@@ -191,6 +193,7 @@ com/mobike/iotcloud/backend/framework/util/ExcelUtil.class
 com/mobike/iotcloud/backend/framework/autoconfig/HibernateProperties.class
 com/mobike/iotcloud/backend/framework/freemarker/FreemarkerStaticModels.class
 weixin/popular/bean/pay/PayNativeInput.class
+weixin/popular/smallAppApi/SmallAppUserAPI.class
 com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.class
 weixin/popular/bean/EventMessage.class
 com/mobike/iotcloud/backend/framework/interceptor/WebAppConfigurer.class
@@ -358,6 +361,7 @@ com/mobike/iotcloud/backend/framework/id/impl/TimedIdGeneratorImpl.class
 com/mobike/iotcloud/backend/framework/auth/Signer.class
 weixin/popular/bean/paymch/TransfersResult.class
 com/mobike/iotcloud/backend/framework/util/EmojiFilter.class
+weixin/popular/smallAppApi/SmallAppUserAPI$SessionResp.class
 weixin/popular/bean/massmessage/MassVoiceMessage.class
 weixin/popular/bean/MediaType$1.class
 com/mobike/iotcloud/backend/framework/freemarker/HTMLContent.class

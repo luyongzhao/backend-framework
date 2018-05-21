@@ -17,7 +17,7 @@ public class RestPageLimit extends MapBean {
         this.list(new ArrayList<>());
     }
 
-    public RestPageLimit(long count, int pageSize, int pageNo, List list) {
+    public RestPageLimit(List list, long count, int pageNo, int pageSize) {
         long pageTotal = count / pageSize;
         if (count % pageSize != 0) {
 

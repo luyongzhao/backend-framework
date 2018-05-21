@@ -1,6 +1,7 @@
 package com.mobike.iotcloud.backend.framework.controller;
 
 import com.mobike.iotcloud.backend.framework.exception.ValidateException;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -34,5 +35,47 @@ public class BasicValidateController{
 
         }
 
+    }
+
+    /**
+     * 校验分页参数，不正确则
+     * @param pageNo
+     * @param pageSize
+     */
+    protected PagingParam validateAndSetPagingParam(Integer pageNo, Integer pageSize){
+
+        return validateAndSetPagingParam(pageNo,pageSize,1,10);
+    }
+
+
+    protected PagingParam validateAndSetPagingParam(Integer pageNo, Integer pageSize, Integer defaultPageNo, Integer defaultPageSize){
+
+
+        if (pageNo==null || pageNo.intValue()<1) {
+
+            pageNo = defaultPageNo;
+        }
+
+        if (pageSize==null || pageSize.intValue()<0) {
+
+            pageSize = defaultPageSize;
+        }
+
+        return new PagingParam(pageNo,pageSize);
+
+    }
+
+    @Data
+    public static class PagingParam{
+
+        private int pageNo;
+
+        private int pageSize;
+
+        public PagingParam(int pageNo, int pageSize){
+
+            this.pageNo = pageNo;
+            this.pageSize = pageSize;
+        }
     }
 }

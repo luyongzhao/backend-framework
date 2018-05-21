@@ -200,7 +200,7 @@ public class DateUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println(format(new Date(), "yyyyMMdd0HHmmssS"));
+        System.out.println(format(new Date(1525849930659L), "yyyyMMdd0HHmmss S"));
     }
 
     public static Calendar weekOfYear(Integer year, Integer week) {
