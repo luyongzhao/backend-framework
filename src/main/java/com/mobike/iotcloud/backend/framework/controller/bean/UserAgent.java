@@ -148,7 +148,7 @@ public class UserAgent {
     }
 
     public boolean isMicroMessenger() {
-        return userAgent.indexOf(deviceMicroMessage) != -1;
+        return userAgent.toLowerCase().indexOf(deviceMicroMessage) != -1;
     }
 
     /**

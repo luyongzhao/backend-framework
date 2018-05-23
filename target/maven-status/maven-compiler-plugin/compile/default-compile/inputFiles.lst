@@ -64,6 +64,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/pay/PayWarn.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/message/MusicMessage.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/AdaptorCDATA.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/smallAppApi/SmallAppUserAPI.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/corpapi/CorpOAuthAPI.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/selfmenu/News.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/component/ComponentReceiveXML.java
@@ -182,6 +183,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/DateConverterConfig.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/UUID.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/component/AuthorizerInfo.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/smallAppApi/SmallAppBaseAPI.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/PersistentCacheProperties.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/templatemessage/TemplateItem.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/message/Message.java
