@@ -67,3 +67,8 @@ id:
             key: redis中的key名称  
             cacheSize:20--批量从redis中获取的缓存在本地的数量
 </code></pre>
+
+##编码原则
++ 多使用插入和查询，少使用更新和删除
++ 数据表的每条记录都会被映射成一个对象，对象获取优先从缓存中获取，没有才会去数据库加载，具体参考com.mobike.iotcloud.backend.framework.service。MemcachedServiceSupport
++ 为提高列表查询效率，列表数据组装可以通过redis中存放对象ID列表，拼接实体对象的方式，com.mobike.iotcloud.backend.framework.service.ServiceSupport

@@ -52,11 +52,11 @@ public abstract class ServiceSupport
 	 * 
 	 * @param persistentCache
 	 * @param persistentCacheKey
-	 * @param idx
-	 * @param pageRowDisplay
+	 * @param idx 列表偏移结束位置，从1开始
+	 * @param pageSize
 	 * @return 如果有数据就会返回zset中对应区间内的id列表
 	 */
-	public RestPageMore pageMoreForpersistentCacheZSetDesc(PersistentCache persistentCache, String persistentCacheKey, Integer idx, Integer pageRowDisplay)
+	public RestPageMore pageMoreForPersistentCacheZSetDesc(PersistentCache persistentCache, String persistentCacheKey, Integer idx, Integer pageSize)
 	{
 		if (idx == null || idx.intValue() < 0)
 		{
@@ -93,7 +93,7 @@ public abstract class ServiceSupport
 			// 注意: 1、下标是0本位的， 2、查询方法zrange.... 是双向包含区间， 例如3~10,
 			// 会返回包含3和10以及中间的所有下标数据
 			// 4 ---> 3, to: 3, from: 3-4 = -1
-			Integer from = idx - pageRowDisplay + 1;
+			Integer from = idx - pageSize + 1;
 			Integer to = idx;
 
 			if (from < 0)
@@ -115,9 +115,9 @@ public abstract class ServiceSupport
 		return page;
 	}
 
-	public RestPageLimit pageLimitFrompersistentCacheZsetDesc(PersistentCache persistentCache, String key, Long page, Integer pageDisplay)
+	public RestPageLimit pageLimitFromPersistentCacheZsetDesc(PersistentCache persistentCache, String key, Long pageNo, Integer pageSize)
 	{
-		return pageLimitFrompersistentCacheZsetDesc(persistentCache, key, page, pageDisplay, false);
+		return pageLimitFromPersistentCacheZsetDesc(persistentCache, key, pageNo, pageSize, false);
 	}
 
 	/**
@@ -125,27 +125,28 @@ public abstract class ServiceSupport
 	 * 
 	 * @param persistentCache
 	 * @param key
-	 * @param page
-	 * @param pageDisplay
+	 * @param pageNo 页码，从1开始
+	 * @param pageSize 每一页显示的数量
+	 * @param needTotalCount 是否需要显示总数量
 	 * @return
 	 */
-	public RestPageLimit pageLimitFrompersistentCacheZsetDesc(PersistentCache persistentCache, String key, Long page, Integer pageDisplay,
+	public RestPageLimit pageLimitFromPersistentCacheZsetDesc(PersistentCache persistentCache, String key, Long pageNo, Integer pageSize,
 															  boolean needTotalCount)
 	{
-		if (page == null || page.intValue() < 0)
+		if (pageNo == null || pageNo.intValue() < 0)
 		{
-			page = 1L;
+			pageNo = 1L;
 		}
 
 		long totalRow = persistentCache.zcard(key);
 
 		RestPageLimit limit = new RestPageLimit();
-		long pageTotal = totalRow % pageDisplay == 0 ? totalRow / pageDisplay : totalRow / pageDisplay + 1;
+		long pageTotal = totalRow % pageSize == 0 ? totalRow / pageSize : totalRow / pageSize + 1;
 		limit.pageTotal(pageTotal);
-		limit.page(page);
+		limit.page(pageNo);
 
-		long start = (page - 1) * pageDisplay;
-		long end = page * pageDisplay - 1;
+		long start = (pageNo - 1) * pageSize;
+		long end = pageNo * pageSize - 1;
 
 		if (needTotalCount)
 		{
@@ -164,27 +165,27 @@ public abstract class ServiceSupport
 	 * 
 	 * @param persistentCache
 	 * @param key
-	 * @param page
-	 * @param pageDisplay
+	 * @param pageNo
+	 * @param pageSize
 	 * @return
 	 */
-	public RestPageLimit pageLimitFrompersistentCacheZset(PersistentCache persistentCache, String key, Long page, Integer pageDisplay,
+	public RestPageLimit pageLimitFromPersistentCacheZset(PersistentCache persistentCache, String key, Long pageNo, Integer pageSize,
 			boolean needTotalCount)
 	{
-		if (page == null || page.intValue() < 0)
+		if (pageNo == null || pageNo.intValue() < 0)
 		{
-			page = 1L;
+			pageNo = 1L;
 		}
 
 		long totalRow = persistentCache.zcard(key);
 
 		RestPageLimit limit = new RestPageLimit();
-		long pageTotal = totalRow % pageDisplay == 0 ? totalRow / pageDisplay : totalRow / pageDisplay + 1;
+		long pageTotal = totalRow % pageSize == 0 ? totalRow / pageSize : totalRow / pageSize + 1;
 		limit.pageTotal(pageTotal);
-		limit.page(page);
+		limit.page(pageNo);
 
-		long start = (page - 1) * pageDisplay;
-		long end = page * pageDisplay - 1;
+		long start = (pageNo - 1) * pageSize;
+		long end = pageNo * pageSize - 1;
 
 		if (needTotalCount)
 		{
@@ -203,26 +204,26 @@ public abstract class ServiceSupport
 	 * 
 	 * @param persistentCache
 	 * @param key
-	 * @param page
-	 * @param pageDisplay
+	 * @param pageNo
+	 * @param pageSize
 	 * @return
 	 */
-	public RestPageLimit pageLimitFrompersistentCacheQueue(PersistentCache persistentCache, String key, Long page, Integer pageDisplay)
+	public RestPageLimit pageLimitFromPersistentCacheQueue(PersistentCache persistentCache, String key, Long pageNo, Integer pageSize)
 	{
-		if (page == null || page.intValue() < 0)
+		if (pageNo == null || pageNo.intValue() < 0)
 		{
-			page = 1L;
+			pageNo = 1L;
 		}
 
 		long totalRow = persistentCache.llen(key);
 
 		RestPageLimit limit = new RestPageLimit();
-		long pageTotal = totalRow % pageDisplay == 0 ? totalRow / pageDisplay : totalRow / pageDisplay + 1;
+		long pageTotal = totalRow % pageSize == 0 ? totalRow / pageSize : totalRow / pageSize + 1;
 		limit.pageTotal(pageTotal);
-		limit.page(page);
+		limit.page(pageNo);
 
-		long start = (page - 1) * pageDisplay;
-		long end = page * pageDisplay - 1;
+		long start = (pageNo - 1) * pageSize;
+		long end = pageNo * pageSize - 1;
 
 		limit.put("totalCount", totalRow);
 
