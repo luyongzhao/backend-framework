@@ -1,3 +1,7 @@
+##通用后端框架
+该框架适用于多表业务系统的开发，能够半自动生成数据库映射、service 层和controller层的通用代码。
+框架集成缓存、校验框架、ID生成器、全局异常捕获、通用http请求签名算法等功能。
+
 ##包结构
 + annotation：自定义注解
 + auth：授权加密算法
@@ -18,7 +22,7 @@
 
 ##数据表命名规则
 1. 数据表名称多个单词通过下划线分割
-2. 数据表字段采用驼峰写法，首字母小写
+2. 数据表字段采用驼峰写法，首字母小写，主键ID需要命名为id，而不能是userId或者xxId。
 
 ##校验框架参考
 + [https://blog.csdn.net/csyuyaoxiadn/article/details/56016359](https://blog.csdn.net/csyuyaoxiadn/article/details/56016359)
