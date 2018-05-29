@@ -162,6 +162,11 @@ public class LocalHttpClient {
 		return execute(request,JsonResponseHandler.createResponseHandler(clazz));
 	}
 
+	public static String executeHtmlResult(HttpUriRequest request){
+
+		return execute(request,HtmlResponseHandler.createResponseHandler());
+	}
+
 	
 	public static <T> T keyStoreExecute(String mch_id, HttpUriRequest request, ResponseHandler<T> responseHandler){
 		String uriId = loggerRequest(request);
