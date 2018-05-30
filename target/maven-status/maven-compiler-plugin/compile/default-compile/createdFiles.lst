@@ -4,6 +4,7 @@ com/mobike/iotcloud/backend/framework/freemarker/FreeMarkerTemplateFacade.class
 weixin/popular/corpapi/CorpBaseAPI.class
 weixin/popular/util/JsUtil.class
 com/mobike/iotcloud/backend/framework/validate/Phone$List.class
+com/mobike/iotcloud/backend/framework/http/client/HtmlResponseHandler.class
 weixin/popular/api/TokenAPI.class
 com/mobike/iotcloud/backend/framework/controller/bean/MobileTicketBuilder.class
 com/mobike/iotcloud/backend/framework/interceptor/RepeatInputStreamFilter.class
@@ -219,6 +220,7 @@ weixin/popular/bean/Shorturl.class
 com/mobike/iotcloud/backend/framework/util/RSAUtil.class
 com/mobike/iotcloud/backend/framework/util/ExpireSet$KeyValue.class
 com/mobike/iotcloud/backend/framework/cache/impl/RedisPersistentCacheImpl$1.class
+com/mobike/iotcloud/backend/framework/http/client/HtmlResponseHandler$JsonResponseHandlerImpl.class
 weixin/popular/bean/paymch/SendCouponResult.class
 weixin/popular/bean/message/VoiceMessage$Voice.class
 weixin/popular/bean/templatemessage/TemplateMessage.class

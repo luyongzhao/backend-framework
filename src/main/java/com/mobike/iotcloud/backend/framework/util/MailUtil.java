@@ -1,5 +1,6 @@
 package com.mobike.iotcloud.backend.framework.util;
 
+import com.sun.mail.util.MailSSLSocketFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -7,6 +8,7 @@ import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
+import java.security.GeneralSecurityException;
 import java.util.Calendar;
 import java.util.Properties;
 
@@ -66,21 +68,50 @@ public class MailUtil
 
 	private Session session;
 
+	private static MailUtil mailUtil = null;
+
 	/**
 	 * 构造函数
 	 */
-	public MailUtil()
+	private MailUtil()
 	{
 
 	}
 
-	public MailUtil(String smtp, String user, String password)
+	private MailUtil(String smtp, String user, String password)
 	{
 		this.smtp = smtp;
 		this.user = user;
 		this.password = password;
 		log.info("smtp:" + this.smtp + "\tuser:" + this.user + "\tpasswd:" + this.password);
 	}
+
+	public synchronized static MailUtil getInstance(String smtp, String user, String password,boolean withSSL)throws MessagingException,GeneralSecurityException{
+
+	    if (mailUtil == null) {
+
+	        mailUtil = new MailUtil(smtp,user,password);
+
+        }
+
+        if (mailUtil.getTrans()==null || !mailUtil.getTrans().isConnected()) {
+
+	        if (withSSL) {
+                mailUtil.connectWithSSL();
+            }else{
+                mailUtil.connect();
+            }
+
+            log.info("success to connect to "+user);
+
+        }
+
+        return mailUtil;
+
+    }
+
+
+
 
 	/**
 	 * <p>
@@ -110,7 +141,42 @@ public class MailUtil
 			// Get session
 			session = Session.getDefaultInstance(props, null);
 			// watch the mail commands go by to the mail server
-			session.setDebug(true);
+			session.setDebug(false);
+		}
+
+		if (trans == null)
+		{
+			trans = session.getTransport("smtp");
+		}
+
+		if (!trans.isConnected())
+		{
+			trans.connect(smtp, user, password);
+		}
+
+		return this;
+	}
+
+	public MailUtil connectWithSSL() throws MessagingException,GeneralSecurityException
+	{
+
+		if (session == null)
+		{
+			Properties props = new Properties();
+			props.put("mail.smtp.host", smtp);
+			props.put("mail.smtp.auth", "true");
+			props.put("mail.smtp.starttls.enable", "true");
+			props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+			props.put("mail.smtp.socketFactory.port","550");
+			props.put("mail.smtp.socketFactory.fallback", "true");
+
+			MailSSLSocketFactory sf = new MailSSLSocketFactory();
+			sf.setTrustAllHosts(true);
+			props.put("mail.smtp.ssl.socketFactory", sf);
+			// Get session
+			session = Session.getDefaultInstance(props, null);
+			// watch the mail commands go by to the mail server
+			session.setDebug(false);
 		}
 
 		if (trans == null)
@@ -221,7 +287,7 @@ public class MailUtil
 	 *            主题
 	 * @param text
 	 *            内容
-	 * @param filename
+	 * @param filenames
 	 *            附件
 	 * @throws MessagingException
 	 */
@@ -373,11 +439,17 @@ public class MailUtil
 	{
 		try
 		{
-			new MailUtil("smtp.xschool.com", "developer@xschool.com", "Xschool@2015").connect()
-					.sendEmail("developer@xschool.com", "719759154@qq.com", "销售跟踪提醒", "Hi,路永召<br/> 有一个孩子(技术组测试3)注册成为了用户，家长手机号码为17710220684,请尽快联系！", "gbk").disConnect();
+			MailUtil util = new MailUtil("smtp.partner.outlook.cn", "luyongzhao@mobike.com", "password")
+                    .connectWithSSL();
+            log.info("connect success!");
+			util.sendEmail("luyongzhao@mobike.com", "测试邮件", "Hi,luyongzhao<br/> 有一个孩子(技术组测试3)注册成为了用户，家长手机号码为17710220684,请尽快联系！", "gbk");
+            log.info("send success1!");
+            util.sendEmail("luyongzhao@mobike.com", "测试邮件", "Hi,luyongzhao<br/> 有一个孩子(技术组测试3)注册成为了用户，家长手机号码为17710220684,请尽快联系！", "gbk");
+            log.info("send success2!");
+            util.disConnect();
 
 			log.info("send success!");
-		} catch (MessagingException e)
+		} catch (Exception e)
 		{
 			e.printStackTrace();
 		}

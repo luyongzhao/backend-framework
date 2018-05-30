@@ -18,13 +18,8 @@ public class ValidateUtils {
 
 
     public static void main(String[] args) {// (http|ftp|https):\\/\\/[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?
-        System.out.println(isURL("http://regxlib.com/Default.aspx"));
-        System.out.println(isURL("http://electronics.cnet.com/electronics/0-6342366-8-8994967-1.html"));
-        System.out.println(isURL("http://electronics.cnet.com/electronics/0-6342366-8-8994967-1.html?a=1"));
-        System.out.println(isURL("http://electronics.cnet.com.cn/electronics/0-6342366-8-8994967-1.html?a=1&b=d"));
-        System.out.println(isURL("www.yahoo.com"));
-        System.out.println(isURL("http://192.168.1.100:11112/classHead/3.jpg"));
-        System.out.println(isURL("ab2,"));
+
+        System.out.println(ValidateUtils.isEmail("luyongzhao@mobike.com"));
     }
 
     public static boolean isLength(String key, int min, int max) {
@@ -172,5 +167,7 @@ public class ValidateUtils {
     public static boolean isWithin(int i, int min, int max) {
         return i >= min && i <= max;
     }
+
+
 
 }

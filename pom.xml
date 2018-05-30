@@ -115,17 +115,24 @@
             <artifactId>commons-pool</artifactId>
             <version>1.6</version>
         </dependency>
+
+        <!--需要放到poi-ooxml之前 -->
+        <!--<dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>javax.mail-api</artifactId>
+            <version>1.6.0</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.15</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>javax.mail-api</artifactId>
-            <version>1.6.0</version>
         </dependency>
 
         <dependency>

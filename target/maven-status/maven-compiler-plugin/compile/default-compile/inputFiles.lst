@@ -33,6 +33,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/pay/Orderquery.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/message/NewsMessage.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestPageMore.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/http/client/HtmlResponseHandler.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/selfmenu/Button.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/component/AuthorizerAccessToken.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/pay/RefundRequest.java

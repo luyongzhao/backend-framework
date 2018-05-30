@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5f5f4df-d36b-4596-ad07-238035ff1b79" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_javax_mail_api_1_6_0.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/iotcloud-backend-framework-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/iotcloud-backend-framework-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/ServiceSupport.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/ServiceSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iotcloudbackendframework.iml" afterPath="$PROJECT_DIR$/iotcloudbackendframework.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/MailUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/MailUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,106 +26,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MD5.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/MD5.java">
+      <file leaf-file-name="ValidateUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-559">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumberX.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/NumberX.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-492">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="333">
+              <caret line="131" column="20" lean-forward="false" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QRCodeHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/QRCodeHelper.java">
+      <file leaf-file-name="LineOutputStream.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/com/sun/mail/util/LineOutputStream.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MobileValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/MobileValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/validate/PhoneValidator.java">
+      <file leaf-file-name="MailUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/MailUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="373">
+              <caret line="441" column="102" lean-forward="false" selection-start-line="441" selection-start-column="102" selection-end-line="441" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="706">
-                <caret line="73" column="107" lean-forward="false" selection-start-line="73" selection-start-column="107" selection-end-line="73" selection-end-column="107" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceSupport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/ServiceSupport.java">
+      <file leaf-file-name="Service.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/javax/mail/Service.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="243">
+              <caret line="94" column="29" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FreeMarkerTemplateService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/FreeMarkerTemplateService.java">
+      <file leaf-file-name="SMTPTransport.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/com/sun/mail/smtp/SMTPTransport.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="53" />
+            <state relative-caret-position="-654">
+              <caret line="591" column="19" lean-forward="false" selection-start-line="591" selection-start-column="19" selection-end-line="591" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestPageMore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestPageMore.java">
+      <file leaf-file-name="Transport.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/javax/mail/Transport.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="328">
+              <caret line="175" column="25" lean-forward="false" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemcachedServiceSupport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/MemcachedServiceSupport.java">
+      <file leaf-file-name="LocalHttpClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/LocalHttpClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="634">
+              <caret line="166" column="62" lean-forward="false" selection-start-line="166" selection-start-column="62" selection-end-line="166" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestBuilderWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/RequestBuilderWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3330">
+              <caret line="250" column="53" lean-forward="false" selection-start-line="250" selection-start-column="33" selection-end-line="250" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +144,8 @@
       <find>TicketBuilder</find>
       <find>AppUserAgent</find>
       <find>userAgent</find>
-      <find>userAgent</find>
+      <find>poi</find>
+      <find>debug</find>
     </findStrings>
     <replaceStrings>
       <replace>persistentCache</replace>
@@ -176,11 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/weixin/popular/util/XMLConverUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/weixin/popular/api/BaseAPI.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CorpWeiXinTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/weixin/popular/popular/api/ComponentAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/weixin/popular/api/ComponentAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/annotation/CachedAnnotationUtils.java" />
@@ -227,6 +215,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/UserAgent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/ServiceSupport.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/LocalHttpClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/HtmlResponseHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/MailUtil.java" />
       </list>
     </option>
   </component>
@@ -262,13 +255,21 @@
           <item name="iotcloud-backend-framework" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="iotcloud-backend-framework" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.apache.poi:poi-ooxml:3.15" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="4" />
+    <option name="y" value="52" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -303,38 +304,33 @@
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.sun.mail:javax.mail:1.6.0" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.sun.mail:javax.mail:1.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.mail-1.6.0.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.sun.mail:javax.mail:1.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.mail-1.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iotcloudbackendframework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotcloudbackendframework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.sun.mail:javax.mail:1.6.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.mail-1.6.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -358,16 +354,16 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util" />
+      <recent name="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/com/sun/mail/util" />
       <recent name="$PROJECT_DIR$/src/main/java/weixin" />
       <recent name="$PROJECT_DIR$/src/main/java/weixin/popular" />
       <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mobike.iotcloud.backend.framework.http.client" />
       <recent name="weixin.popular.smallAppApi" />
       <recent name="com.mobike.iotcloud.backend.framework.util" />
-      <recent name="com.mobike.iotcloud.backend.framework.http.client" />
       <recent name="com.mobike.iotcloud.backend.framework.interceptor" />
       <recent name="com.mobike.iotcloud.backend.framework.freemarker" />
     </key>
@@ -387,32 +383,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SmallAppTest.testjscode2session">
-    <configuration name="CorpWeiXinTest.testJsSign" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="weixin.popular.corpapi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="iotcloudbackendframework" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="weixin.popular.corpapi" />
-      <option name="MAIN_CLASS_NAME" value="weixin.popular.corpapi.CorpWeiXinTest" />
-      <option name="METHOD_NAME" value="testJsSign" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="Application.MailUtil">
     <configuration name="DateConverterConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -451,14 +422,14 @@
       <module name="iotcloudbackendframework" />
       <envs />
     </configuration>
-    <configuration name="RSAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MailUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.mobike.iotcloud.backend.framework.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.mobike.iotcloud.backend.framework.util.RSAUtil" />
+      <option name="MAIN_CLASS_NAME" value="com.mobike.iotcloud.backend.framework.util.MailUtil" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -494,6 +465,25 @@
       </option>
       <envs />
       <patterns />
+    </configuration>
+    <configuration name="ValidateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mobike.iotcloud.backend.framework.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.mobike.iotcloud.backend.framework.util.ValidateUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="iotcloudbackendframework" />
+      <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
@@ -576,19 +566,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CorpWeiXinTest.testJsSign" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RSAUtil" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DateConverterConfig" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DateUtils" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SmallAppTest.testjscode2session" />
+      <item index="0" class="java.lang.String" itemvalue="Application.DateConverterConfig" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DateUtils" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SmallAppTest.testjscode2session" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ValidateUtils" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MailUtil" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SmallAppTest.testjscode2session" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DateUtils" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DateConverterConfig" />
-        <item index="3" class="java.lang.String" itemvalue="Application.RSAUtil" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CorpWeiXinTest.testJsSign" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MailUtil" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ValidateUtils" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SmallAppTest.testjscode2session" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DateUtils" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DateConverterConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -608,7 +598,7 @@
       <workItem from="1524748170644" duration="23968000" />
       <workItem from="1524905427296" duration="52197000" />
       <workItem from="1526355022593" duration="5540000" />
-      <workItem from="1526379124879" duration="17509000" />
+      <workItem from="1526379124879" duration="42323000" />
     </task>
     <task id="LOCAL-00001" summary="调整说明">
       <created>1524018647197</created>
@@ -841,7 +831,35 @@
       <option name="project" value="LOCAL" />
       <updated>1527065557225</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="增加部分说明">
+      <created>1527218583071</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1527218583072</updated>
+    </task>
+    <task id="LOCAL-00035" summary="增加部分说明">
+      <created>1527230696607</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1527230696607</updated>
+    </task>
+    <task id="LOCAL-00036" summary="增加部分说明">
+      <created>1527577977377</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1527577977377</updated>
+    </task>
+    <task id="LOCAL-00037" summary="增加部分说明">
+      <created>1527577996102</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1527577996102</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -868,7 +886,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214291000" />
+    <option name="totallyTimeSpent" value="239105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -889,14 +907,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13675214" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18009768" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5015353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33469805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1330604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17809622" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15628816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17887668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -941,7 +959,8 @@
     <MESSAGE value="修复post中文乱码问题" />
     <MESSAGE value="增加微信公共类库" />
     <MESSAGE value="增加公用方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加公用方法" />
+    <MESSAGE value="增加部分说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加部分说明" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,149 +969,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16-sources.jar!/javax/servlet/http/HttpServletRequestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16-sources.jar!/org/apache/catalina/connector/InputBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16-sources.jar!/org/apache/catalina/connector/CoyoteInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16-sources.jar!/javax/servlet/ServletInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/BodyReaderHttpServletRequestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/interceptor/RepeatInputStreamFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/DES.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/AES128Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-445">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/SHA1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/security/interfaces/RSAPublicKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/RSAUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1341">
-          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/annotation/AuthMobile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/annotation/CachedAnnotationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/SHA256withRSASigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/auth/Signer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/RequestBuilderWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/dao/BasicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="59" column="51" lean-forward="false" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/IPAddressUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ShortLinkUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="77" column="37" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/bean/YORN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/SignValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2655">
@@ -1210,14 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -1261,7 +1129,7 @@
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1271,8 +1139,8 @@
         <state relative-caret-position="338">
           <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
           <folding>
-            <element signature="e#4446#4447#0" expanded="true" />
-            <element signature="e#4526#4527#0" expanded="true" />
+            <element signature="e#4446#4447#0" expanded="false" />
+            <element signature="e#4526#4527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1306,7 +1174,7 @@
         <state relative-caret-position="365">
           <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1332,7 +1200,7 @@
         <state relative-caret-position="217">
           <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1353,22 +1221,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/ServiceSupport.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="58">
+            <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="6" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ClassUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="-599">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="706">
-            <caret line="73" column="107" lean-forward="false" selection-start-line="73" selection-start-column="107" selection-end-line="73" selection-end-column="107" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/HtmlResponseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1527503109000" expanded="true" signature="554:610" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/JsonResponseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/LocalResponseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDQueueGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/service/ServiceSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="117" column="136" lean-forward="false" selection-start-line="117" selection-start-column="128" selection-end-line="117" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/TimedIdGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/ServiceImpl.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/RequestBuilderWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="250" column="53" lean-forward="false" selection-start-line="250" selection-start-column="33" selection-end-line="250" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/http/client/LocalHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="166" column="62" lean-forward="false" selection-start-line="166" selection-start-column="62" selection-end-line="166" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.6.0/javax.mail-api-1.6.0.jar!/javax/mail/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="81" column="39" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-592">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.6.0/javax.mail-api-1.6.0.jar!/javax/mail/MessagingException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="131" column="20" lean-forward="false" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/com/sun/mail/util/LineOutputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/ValidateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/com/sun/mail/util/AES128.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/com/sun/mail/smtp/SMTPTransport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-654">
+          <caret line="591" column="19" lean-forward="false" selection-start-line="591" selection-start-column="19" selection-end-line="591" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/javax/mail/Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="94" column="29" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/id/impl/RedisIDIncrementGeneratorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar!/javax/mail/Transport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="175" column="25" lean-forward="false" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobike/iotcloud/backend/framework/util/MailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="441" column="102" lean-forward="false" selection-start-line="441" selection-start-column="102" selection-end-line="441" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
