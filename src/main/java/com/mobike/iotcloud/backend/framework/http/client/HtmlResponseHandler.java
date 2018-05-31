@@ -27,17 +27,27 @@ public class HtmlResponseHandler {
 
 		}
 
-		public T handleResponse(HttpResponse response)
-				throws ClientProtocolException, IOException {
-			int status = response.getStatusLine().getStatusCode();
-            if (status >= 200 && status < 300) {
-                HttpEntity entity = response.getEntity();
-                String str = EntityUtils.toString(entity,"utf-8");
-                logger.info("URI[{}] elapsed time:{} ms RESPONSE DATA:{}",super.uriId,System.currentTimeMillis()-super.startTime,str);
-                return (T)str;
-            } else {
-                throw new ClientProtocolException("Unexpected response status: " + status);
+		public T handleResponse(HttpResponse response){
+
+		    try{
+
+                int status = response.getStatusLine().getStatusCode();
+                if (status >= 200 && status < 300) {
+                    HttpEntity entity = response.getEntity();
+                    String str = EntityUtils.toString(entity,"utf-8");
+                    logger.info("URI[{}] elapsed time:{} ms RESPONSE DATA:{}",super.uriId,System.currentTimeMillis()-super.startTime,str);
+                    return (T)str;
+                } else {
+                    logger.error("Unexpected response status: {}",status);
+                    return null;
+                }
+
+            }catch (IOException e){
+
+		        logger.error("",e);
+		        return null;
             }
+
 		}
 		
 	}

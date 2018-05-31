@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.List;
 
 public class JsonResponseHandler{
 
@@ -28,18 +29,28 @@ public class JsonResponseHandler{
 			this.clazz = clazz;
 		}
 
-		public T handleResponse(HttpResponse response)
-				throws ClientProtocolException, IOException {
-			int status = response.getStatusLine().getStatusCode();
-            if (status >= 200 && status < 300) {
-                HttpEntity entity = response.getEntity();
-                String str = EntityUtils.toString(entity,"utf-8");
-                logger.info("URI[{}] elapsed time:{} ms RESPONSE DATA:{}",super.uriId,System.currentTimeMillis()-super.startTime,str);
-                return JsonUtil.parseJSONObject(str, clazz);
-            } else {
-                throw new ClientProtocolException("Unexpected response status: " + status);
-            }
+		public T handleResponse(HttpResponse response){
+
+			try{
+				int status = response.getStatusLine().getStatusCode();
+				if (status >= 200 && status < 300) {
+					HttpEntity entity = response.getEntity();
+					String str = EntityUtils.toString(entity,"utf-8");
+					logger.info("URI[{}] elapsed time:{} ms RESPONSE DATA:{}",super.uriId,System.currentTimeMillis()-super.startTime,str);
+					return JsonUtil.parseJSONObject(str, clazz);
+				} else {
+					//throw new ClientProtocolException("Unexpected response status: " + status);
+					logger.error("Unexpected response status: {}",status);
+					return null;
+				}
+			}catch (IOException e){
+
+				logger.error("",e);
+
+				return null;
+			}
+
 		}
-		
+
 	}
 }

@@ -1,5 +1,6 @@
 package com.mobike.iotcloud.backend.framework.http.client;
 
+import com.mobike.iotcloud.backend.framework.util.JsonUtil;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHeaders;
@@ -21,6 +22,7 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -150,7 +152,6 @@ public class LocalHttpClient {
 		return null;
 	}
 	
-	
 
 	/**
 	 * 数据返回自动JSON对象解析
@@ -161,6 +162,26 @@ public class LocalHttpClient {
 	public static <T> T executeJsonResult(HttpUriRequest request, Class<T> clazz){
 		return execute(request,JsonResponseHandler.createResponseHandler(clazz));
 	}
+
+	/**
+	 * 数据返回自动JSON对象解析,适用于数组返回
+	 * @param request request
+	 * @param clazz clazz
+	 * @return result
+	 */
+	public static <T> List<T> executeJsonListResult(HttpUriRequest request, Class<T> clazz){
+
+		String data = executeHtmlResult(request);
+		if (data == null) {
+
+			return null;
+		}
+
+
+		return JsonUtil.parseArray(data,clazz);
+	}
+
+
 
 	public static String executeHtmlResult(HttpUriRequest request){
 

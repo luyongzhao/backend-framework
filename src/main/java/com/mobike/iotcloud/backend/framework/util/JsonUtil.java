@@ -3,6 +3,7 @@ package com.mobike.iotcloud.backend.framework.util;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.List;
 import java.util.Map;
 
 public class JsonUtil {
@@ -30,5 +31,10 @@ public class JsonUtil {
         JSONObject jsonObject = JSON.parseObject(jsonString);
 
         return jsonObject;
+    }
+
+    public static <T> List<T> parseArray(String jsonString, Class<T> clazz){
+
+        return JSON.parseArray(jsonString,clazz);
     }
 }

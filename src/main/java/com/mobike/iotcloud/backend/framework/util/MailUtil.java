@@ -439,7 +439,7 @@ public class MailUtil
 	{
 		try
 		{
-			MailUtil util = new MailUtil("smtp.partner.outlook.cn", "luyongzhao@mobike.com", "password")
+			MailUtil util = new MailUtil("smtp.partner.outlook.cn", "shareoffice@mobike.com", "xxx")
                     .connectWithSSL();
             log.info("connect success!");
 			util.sendEmail("luyongzhao@mobike.com", "测试邮件", "Hi,luyongzhao<br/> 有一个孩子(技术组测试3)注册成为了用户，家长手机号码为17710220684,请尽快联系！", "gbk");

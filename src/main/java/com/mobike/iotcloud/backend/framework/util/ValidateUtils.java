@@ -19,7 +19,7 @@ public class ValidateUtils {
 
     public static void main(String[] args) {// (http|ftp|https):\\/\\/[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?
 
-        System.out.println(ValidateUtils.isEmail("luyongzhao@mobike.com"));
+        System.out.println(ValidateUtils.isEmail("V-SZweixiu08@mobike.com"));
     }
 
     public static boolean isLength(String key, int min, int max) {
