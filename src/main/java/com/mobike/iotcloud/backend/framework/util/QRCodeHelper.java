@@ -44,7 +44,7 @@ public class QRCodeHelper {
 					bgColor);
 
 			MatrixToImageWriter
-					.writeToStream(bitMatrix, format, stream, config);
+					.writeToStream(bitMatrix, format, stream);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -83,5 +83,10 @@ public class QRCodeHelper {
 			IOUtils.closeQuietly(fo);
 		}
 		return false;
+	}
+
+	public static void main(String args[]){
+
+		QRCodeHelper.generator2Local("L1dMYqgdZmkf0gM-1wjwGIMoz1rHHYnmux7oj7D8_ukGPCBSuupYDrtSKh9QSlUik-rWpJ9LVKK4MEfUUFYEoA",new File("/Users/luyongzhao/Desktop/qrCode.png"),500,500);
 	}
 }
