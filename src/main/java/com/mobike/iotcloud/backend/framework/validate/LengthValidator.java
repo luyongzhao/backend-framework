@@ -1,6 +1,8 @@
 package com.mobike.iotcloud.backend.framework.validate;
 
 
+import org.apache.commons.lang.StringUtils;
+
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
@@ -14,20 +16,28 @@ public class LengthValidator implements ConstraintValidator<Length,String> {
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
 
-        //最小值为0，则可以为空
-        if (min <= 0) {
 
-            return value == null||"".equals(value);
+        //最小值大于0，需要判断值不为空
+        if (min > 0) {
 
-        }else{
+            if  (StringUtils.isBlank(value)){
 
-            int length = value.length();
+                return false;
+            }
 
-            return length>=min && length<=max;
+        }
+        
+        //非空时，需要判断长度是否超过最大值
+        if (!StringUtils.isBlank(value)) {
 
+            if (value.length() > max) {
+
+                return false;
+            }
         }
 
 
+        return true;
 
     }
 
