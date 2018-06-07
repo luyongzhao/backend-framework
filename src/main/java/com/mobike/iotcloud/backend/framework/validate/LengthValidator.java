@@ -26,11 +26,17 @@ public class LengthValidator implements ConstraintValidator<Length,String> {
             }
 
         }
-        
+
         //非空时，需要判断长度是否超过最大值
         if (!StringUtils.isBlank(value)) {
 
             if (value.length() > max) {
+
+                return false;
+            }
+        }else{
+
+            if (max <= 0) {
 
                 return false;
             }
