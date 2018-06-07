@@ -1,5 +1,6 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/util/SignatureUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/UserAgent.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/validate/Length.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/aes/WXBizMsgCrypt.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/api/TokenAPI.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/validate/PhoneValidator.java
@@ -23,6 +24,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/aes/SHA1.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/autoconfig/HibernateProperties.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/controller/bean/RestResponse.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/validate/EmailValidator.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/pay/MchdownRealNewRequest.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/service/FreeMarkerTemplateService.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/util/UUID.java
@@ -91,6 +93,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/api/PayMchAPI.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/paymch/SendCoupon.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/IPAddressUtil.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/validate/Email.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/component/Authorization_info.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/paymch/SendredpackResult.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/dao/dto/DtoSupport.java
@@ -149,6 +152,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/Uploadvideo.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/AES128.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/util/XMLConverUtil.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/validate/LengthValidator.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/component/Authorizer_info.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/DES.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/material/MaterialBatchgetResultItemContent.java
@@ -170,7 +174,6 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/message/VideoMessage.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/client/LocalHttpClient.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/JsonUtil.java
-/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/QRCodeUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/api/ComponentAPI.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/bean/YORN.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/client/XmlResponseHandler.java
@@ -221,6 +224,7 @@
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/CookiesUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/message/TextMessage.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/support/TicketManager.java
+/Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/RSASignUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/component/AuthorizerOption.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/com/mobike/iotcloud/backend/framework/util/BeanContextUtil.java
 /Users/luyongzhao/IdeaProjects/iotcloudbackendframework/src/main/java/weixin/popular/bean/paymch/QueryCouponStock.java
