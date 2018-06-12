@@ -1,10 +1,10 @@
 package ${pkgName}.impl;
 
 
-import com.mobike.iotcloud.backend.framework.cache.MemoryCache;
-import com.mobike.iotcloud.backend.framework.dao.BasicDao;
-import com.mobike.iotcloud.backend.framework.id.IDGenerator;
-import com.mobike.iotcloud.backend.framework.service.MemcachedServiceSupport;
+import MemoryCache;
+import BasicDao;
+import IDGenerator;
+import MemcachedServiceSupport;
 import ${entityPkgName}.${entityName};
 import ${pkgName}.${entityName}Service;
 import org.springframework.beans.factory.annotation.Autowired;

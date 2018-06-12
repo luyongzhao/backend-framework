@@ -2,10 +2,10 @@ package ${controllerPkgName};
 
 import java.util.List;
 
-import com.mobike.iotcloud.backend.framework.controller.BasicValidateController;
-import com.mobike.iotcloud.backend.framework.controller.bean.AppUserAgent;
-import com.mobike.iotcloud.backend.framework.controller.bean.MapBean;
-import com.mobike.iotcloud.backend.framework.controller.bean.RestResponse;
+import BasicValidateController;
+import AppUserAgent;
+import MapBean;
+import RestResponse;
 import ${entityPkgName}.${entityName};
 import ${servicePkgName}.${entityName}Service;
 import io.swagger.annotations.Api;

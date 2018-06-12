@@ -1,6 +1,6 @@
 package ${pkgName};
 
-import com.mobike.iotcloud.backend.framework.dao.dto.DtoSupport;
+import DtoSupport;
 import com.mobike.iotcloud.backend.framework.validate.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
